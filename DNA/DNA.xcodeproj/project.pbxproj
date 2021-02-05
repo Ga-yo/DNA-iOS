@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AABF52AAB6BA03D93E14742B /* Pods_DNA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C638AB1FF7A47177A5E8288 /* Pods_DNA.framework */; };
 		EF5BC2A025CD932B004E8F36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BC29F25CD932B004E8F36 /* AppDelegate.swift */; };
 		EF5BC2A225CD932B004E8F36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BC2A125CD932B004E8F36 /* SceneDelegate.swift */; };
 		EF5BC2A425CD932B004E8F36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5BC2A325CD932B004E8F36 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C638AB1FF7A47177A5E8288 /* Pods_DNA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DNA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CC573ED038C08DCAAA75B74 /* Pods-DNA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNA.release.xcconfig"; path = "Target Support Files/Pods-DNA/Pods-DNA.release.xcconfig"; sourceTree = "<group>"; };
 		EF5BC29C25CD932B004E8F36 /* DNA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5BC29F25CD932B004E8F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF5BC2A125CD932B004E8F36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		EF5BC2A825CD932D004E8F36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF5BC2AB25CD932D004E8F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF5BC2AD25CD932D004E8F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBE4F2F53115BAD43F7483B5 /* Pods-DNA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNA.debug.xcconfig"; path = "Target Support Files/Pods-DNA/Pods-DNA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AABF52AAB6BA03D93E14742B /* Pods_DNA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C3029D40FF56785CF1BD9C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBE4F2F53115BAD43F7483B5 /* Pods-DNA.debug.xcconfig */,
+				9CC573ED038C08DCAAA75B74 /* Pods-DNA.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		65A4E4F61BEFC9C27AED585D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C638AB1FF7A47177A5E8288 /* Pods_DNA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EF5BC29325CD932B004E8F36 = {
 			isa = PBXGroup;
 			children = (
 				EF5BC29E25CD932B004E8F36 /* DNA */,
 				EF5BC29D25CD932B004E8F36 /* Products */,
+				1C3029D40FF56785CF1BD9C9 /* Pods */,
+				65A4E4F61BEFC9C27AED585D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF5BC2B025CD932D004E8F36 /* Build configuration list for PBXNativeTarget "DNA" */;
 			buildPhases = (
+				EED407BB5D1BB4E04BE1EF2B /* [CP] Check Pods Manifest.lock */,
 				EF5BC29825CD932B004E8F36 /* Sources */,
 				EF5BC29925CD932B004E8F36 /* Frameworks */,
 				EF5BC29A25CD932B004E8F36 /* Resources */,
+				8644491FE0A347EDE9B38034 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8644491FE0A347EDE9B38034 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DNA/Pods-DNA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DNA/Pods-DNA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DNA/Pods-DNA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EED407BB5D1BB4E04BE1EF2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DNA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF5BC29825CD932B004E8F36 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		EF5BC2B125CD932D004E8F36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBE4F2F53115BAD43F7483B5 /* Pods-DNA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		EF5BC2B225CD932D004E8F36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CC573ED038C08DCAAA75B74 /* Pods-DNA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
