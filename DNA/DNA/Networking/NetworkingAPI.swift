@@ -13,5 +13,5 @@ enum NetworkingAPI{
     case SignUp(_ name: String, _ email: String, _ password: String)
     case Login(_ email: String, _ password: String)
     case CommentList(_ size: Int, _ page: Int)
-    case CommentWr(_ timelineId: CLong, _ content: String)
+    case CommentWr(_ timelineId: Int, _ content: String)
 }
