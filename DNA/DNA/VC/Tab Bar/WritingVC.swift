@@ -17,7 +17,7 @@ class WritingVC: UIViewController {
     @IBOutlet weak var registButton: UIButton!
     @IBOutlet weak var backregist: UIView!
     
-    let dropDown = DropDown()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,15 +28,16 @@ class WritingVC: UIViewController {
     }
     
     @IBAction func setCategoryButton(_ sender: UIButton){
+        let dropDown = DropDown()
         dropDown.dataSource = ["T - 대리구매자 구하기", "G - 잠수탄 친구 찾기", "C - 일반 대화 하기", "A - 노동자 구하기"]
-        dropDown.anchorView = sender
-        dropDown.bottomOffset = CGPoint(x: 0, y: sender.frame.size.height)
-        dropDown.cellHeight = 28
-        dropDown.textFont = UIFont.systemFont(ofSize: 14)
+//        dropDown.anchorView = sender
+//        dropDown.bottomOffset = CGPoint(x: 0, y: sender.frame.size.height)
+//        dropDown.cellHeight = 28
+//        dropDown.textFont = UIFont.systemFont(ofSize: 14)
         dropDown.show()
        
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
-            SetCategoryButton.setTitle(item, for: .normal)
+            SetCategoryButton.setTitle("\(item)", for: .normal)
         }
     }
 
