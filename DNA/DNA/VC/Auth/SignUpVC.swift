@@ -26,6 +26,9 @@ class SignUpVC: UIViewController {
     }
     @IBOutlet weak var signUpButton: UIButton!
     
+    
+    let httpclient = HTTPClient()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -48,8 +51,35 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func signUpButton(_ sender: UIButton){
+        SignUp(name: nameTxt.text!, email: emailTxt.text!, password: pwTxt.text!)
+    }
+    
+    func email(isCorrect: Bool){
         
     }
+    
+    func SignUp(name: String, email: String, password: String){
+        httpclient.post(.SignUp(name, email, password)).responseJSON(completionHandler: {
+            response in
+            switch response.response?.statusCode {
+            case 201: print("success")
+            case 400:
+                print("BAD REQUEST")
+            case 401:
+                print("UNAUTHORIZED")
+            case 403:
+                print("FORBIDDEN")
+            case 404:
+                print("NOT FOUND")
+            case 409:
+                print("CONFLICT")
+            default :
+                self.warningLabel.isHidden = false
+                print(response.response?.statusCode)
+            }
+        })
+    }
+    
     
     /*
      // MARK: - Navigation
