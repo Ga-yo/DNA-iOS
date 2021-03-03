@@ -9,6 +9,7 @@ import Foundation
 import Alamofire
 
 enum NetworkingAPI{
+    case email
     case refreshToken
     case ConfirmEmail(_ isCorrect: Bool)
     case SignUp(_ name: String, _ email: String, _ password: String)
@@ -18,7 +19,9 @@ enum NetworkingAPI{
     
     var path: String {
         switch self {
-        case .Login :
+        case .email :
+            return "/email?email=\(NetworkingAPI.email)"
+        case .Login, .refreshToken :
             return "/auth"
         case .SignUp :
             return "/signup"
@@ -37,12 +40,17 @@ enum NetworkingAPI{
             let refreshToken : String = "token"
             let userDefault = UserDefaults.standard
             userDefault.set(refreshToken, forKey: "refresh-Token")
-            userDefault.synchronize()
+            userDefault.synchronize(  )
             guard let token = userDefault.string(forKey: "refresh-Token") else {return nil}
             return ["Authorization" : "Bearer" + "token"]
             
         default:
-            
+            let accessToken : String = "access-token"
+            let userDefault = UserDefaults.standard
+            userDefault.set(accessToken, forKey: "access-token")
+            userDefault.synchronize( )
+            guard let token = userDefault.string(forKey: "access-token") else { return nil }
+            return ["Authorization" : "Bearer" + "token"]
         }
     }
     
