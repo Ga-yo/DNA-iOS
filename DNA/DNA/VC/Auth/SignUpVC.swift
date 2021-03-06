@@ -40,6 +40,7 @@ class SignUpVC: UIViewController {
         confirmPwTxt.layer.cornerRadius = 22
         signUpButton.layer.cornerRadius = 22
         warningLabel.isHidden = true
+        ConfirmEmail = emailTxt.text!
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -47,14 +48,21 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func confirmEmailButton(_ sender: UIButton){
-        
+        httpclient.get(.email).responseJSON(completionHandler: {
+            response in
+            switch response.response?.statusCode {
+            case 200 : print("SUCCESS")
+            case 400: print("BAD REQUEST")
+            default : print(response.response?.statusCode)
+            }
+        })
     }
     
     @IBAction func signUpButton(_ sender: UIButton){
         SignUp(name: nameTxt.text!, email: emailTxt.text!, password: pwTxt.text!)
     }
     
-    func email(isCorrect: Bool){
+    func email(){
         
     }
     
