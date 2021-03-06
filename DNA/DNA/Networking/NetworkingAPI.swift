@@ -8,10 +8,11 @@
 import Foundation
 import Alamofire
 
+var ConfirmEmail = String()
+
 enum NetworkingAPI{
     case email
     case refreshToken
-    case ConfirmEmail(_ isCorrect: Bool)
     case SignUp(_ name: String, _ email: String, _ password: String)
     case Login(_ email: String, _ password: String)
     case CommentList(_ size: Int, _ page: Int)
@@ -20,13 +21,11 @@ enum NetworkingAPI{
     var path: String {
         switch self {
         case .email :
-            return "/email?email=\(NetworkingAPI.email)"
+            return "/email" + ConfirmEmail
         case .Login, .refreshToken :
             return "/auth"
         case .SignUp :
             return "/signup"
-        case .ConfirmEmail :
-            return "/email"
         case .CommentList, .CommentWr :
             return "/comment"
         }
