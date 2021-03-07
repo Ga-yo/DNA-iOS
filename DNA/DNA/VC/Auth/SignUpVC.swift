@@ -7,6 +7,8 @@
 
 import UIKit
 
+var ConfirmEmail : String = ""
+
 class SignUpVC: UIViewController {
     
     @IBOutlet weak var circle: UIView!
@@ -40,7 +42,7 @@ class SignUpVC: UIViewController {
         confirmPwTxt.layer.cornerRadius = 22
         signUpButton.layer.cornerRadius = 22
         warningLabel.isHidden = true
-        ConfirmEmail = emailTxt.text!
+        self.reloadInputViews()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -48,41 +50,51 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func confirmEmailButton(_ sender: UIButton){
+        ConfirmEmail = emailTxt.text!
+        print("tapped")
         httpclient.get(.email).responseJSON(completionHandler: {
             response in
             switch response.response?.statusCode {
-            case 200 : print("SUCCESS")
+            case 200 :
+                print("SUCCESS")
+                self.confirmEmailButton.setTitle("확인완료", for: .normal)
             case 400: print("BAD REQUEST")
-            default : print(response.response?.statusCode)
+                self.confirmEmailButton.setTitle("확인불가", for: .normal)
+            default : print(response.error)
             }
         })
     }
     
     @IBAction func signUpButton(_ sender: UIButton){
-        SignUp(name: nameTxt.text!, email: emailTxt.text!, password: pwTxt.text!)
-    }
-    
-    func email(){
-        
+        guard let Name = nameTxt.text else {return}
+        guard let Email = emailTxt.text else {return}
+        guard let Password = pwTxt.text else {return}
+        SignUp(name: Name, email: Email, password: Password)
     }
     
     func SignUp(name: String, email: String, password: String){
         httpclient.post(.SignUp(name, email, password)).responseJSON(completionHandler: {
             response in
             switch response.response?.statusCode {
-            case 201: print("success")
+            case 201:
+                print("SUCCESS")
+                self.navigationController?.popViewController(animated: true)
             case 400:
+                self.warningLabel.isHidden = false
                 print("BAD REQUEST")
             case 401:
+                self.warningLabel.isHidden = false
                 print("UNAUTHORIZED")
             case 403:
+                self.warningLabel.isHidden = false
                 print("FORBIDDEN")
             case 404:
+                self.warningLabel.isHidden = false
                 print("NOT FOUND")
             case 409:
+                self.warningLabel.isHidden = false
                 print("CONFLICT")
             default :
-                self.warningLabel.isHidden = false
                 print(response.response?.statusCode)
             }
         })
