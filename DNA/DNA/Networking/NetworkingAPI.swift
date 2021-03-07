@@ -8,7 +8,6 @@
 import Foundation
 import Alamofire
 
-var ConfirmEmail = String()
 
 enum NetworkingAPI{
     case email
@@ -21,7 +20,7 @@ enum NetworkingAPI{
     var path: String {
         switch self {
         case .email :
-            return "/email" + ConfirmEmail
+            return "/email?email=" + ConfirmEmail
         case .Login, .refreshToken :
             return "/auth"
         case .SignUp :
@@ -33,7 +32,7 @@ enum NetworkingAPI{
     
     var headers: HTTPHeaders? {
         switch self {
-        case .Login, .SignUp:
+        case .Login, .SignUp, .email:
             return nil
         case .refreshToken :
             let refreshToken : String = "token"
@@ -62,6 +61,7 @@ enum NetworkingAPI{
         case .SignUp(let name, let email, let password):
             print(["name":name, "email":email, "password":password])
             return ["name":name, "email":email, "password":password]
+            
         default:
             return [:]
         }
