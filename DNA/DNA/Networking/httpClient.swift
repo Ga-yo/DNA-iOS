@@ -23,7 +23,7 @@ class HTTPClient: HTTPCleintProvider {
     }
     
     func post(_ api: NetworkingAPI) -> DataRequest {
-        return AF.request(baseURL + api.path, method: .post, parameters: api.parameters, encoding: URLEncoding.default, headers: api.headers, interceptor: nil)
+        return AF.request(baseURL + api.path, method: .post, parameters: api.parameters, encoding:JSONEncoding.prettyPrinted, headers: api.headers, interceptor: nil)
     }
     
     func put(_ api: NetworkingAPI) -> DataRequest {
