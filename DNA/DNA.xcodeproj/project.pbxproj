@@ -25,6 +25,10 @@
 		EF5BC2A725CD932B004E8F36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5BC2A525CD932B004E8F36 /* Main.storyboard */; };
 		EF5BC2A925CD932D004E8F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5BC2A825CD932D004E8F36 /* Assets.xcassets */; };
 		EF5BC2AC25CD932D004E8F36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5BC2AA25CD932D004E8F36 /* LaunchScreen.storyboard */; };
+		EFA10F9F25F8F93000F7C79D /* ACommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA10F9E25F8F93000F7C79D /* ACommentVC.swift */; };
+		EFA10FA325F8F94900F7C79D /* GCommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA10FA225F8F94900F7C79D /* GCommentVC.swift */; };
+		EFA10FA625F8F95700F7C79D /* TCommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA10FA525F8F95700F7C79D /* TCommentVC.swift */; };
+		EFA10FA925F8F96700F7C79D /* CCommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA10FA825F8F96700F7C79D /* CCommentVC.swift */; };
 		EFBED72925D3E79500F661A0 /* NanumGothic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFBED72825D3E78F00F661A0 /* NanumGothic.otf */; };
 		EFBED72C25D3E95900F661A0 /* NanumGothicBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFBED72B25D3E95600F661A0 /* NanumGothicBold.otf */; };
 		EFCC7F3025EE293600D41BC4 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCC7F2F25EE293600D41BC4 /* SignInModel.swift */; };
@@ -52,6 +56,10 @@
 		EF5BC2A825CD932D004E8F36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF5BC2AB25CD932D004E8F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF5BC2AD25CD932D004E8F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFA10F9E25F8F93000F7C79D /* ACommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACommentVC.swift; sourceTree = "<group>"; };
+		EFA10FA225F8F94900F7C79D /* GCommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCommentVC.swift; sourceTree = "<group>"; };
+		EFA10FA525F8F95700F7C79D /* TCommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCommentVC.swift; sourceTree = "<group>"; };
+		EFA10FA825F8F96700F7C79D /* CCommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCommentVC.swift; sourceTree = "<group>"; };
 		EFBED72825D3E78F00F661A0 /* NanumGothic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothic.otf; sourceTree = "<group>"; };
 		EFBED72B25D3E95600F661A0 /* NanumGothicBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicBold.otf; sourceTree = "<group>"; };
 		EFCC7F2F25EE293600D41BC4 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
@@ -141,16 +149,50 @@
 				EFBED72225D3E45800F661A0 /* UI */,
 				EFBED72125D3E44700F661A0 /* Models */,
 				EFBED72025D3E44200F661A0 /* VC */,
-				EFBED71F25D3E43200F661A0 /* Networking */,
 				EF5BC29F25CD932B004E8F36 /* AppDelegate.swift */,
 				EF5BC2A125CD932B004E8F36 /* SceneDelegate.swift */,
-				EF5BC2A825CD932D004E8F36 /* Assets.xcassets */,
+				EFA10F9D25F8F8DE00F7C79D /* Comment */,
+				EFBED71F25D3E43200F661A0 /* Networking */,
 				EF5BC2AA25CD932D004E8F36 /* LaunchScreen.storyboard */,
+				EF5BC2A825CD932D004E8F36 /* Assets.xcassets */,
 				EFBED72825D3E78F00F661A0 /* NanumGothic.otf */,
 				EFBED72B25D3E95600F661A0 /* NanumGothicBold.otf */,
 				EF5BC2AD25CD932D004E8F36 /* Info.plist */,
 			);
 			path = DNA;
+			sourceTree = "<group>";
+		};
+		EFA10F9D25F8F8DE00F7C79D /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				EFA10F9E25F8F93000F7C79D /* ACommentVC.swift */,
+				EFA10FA225F8F94900F7C79D /* GCommentVC.swift */,
+				EFA10FA525F8F95700F7C79D /* TCommentVC.swift */,
+				EFA10FA825F8F96700F7C79D /* CCommentVC.swift */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		EFA10FAB25F8F97F00F7C79D /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		EFA10FAC25F8FFA300F7C79D /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		EFA10FAD25F8FFB400F7C79D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				EFCC7F2F25EE293600D41BC4 /* SignInModel.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		EFBED71F25D3E43200F661A0 /* Networking */ = {
@@ -176,7 +218,9 @@
 		EFBED72125D3E44700F661A0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EFCC7F2F25EE293600D41BC4 /* SignInModel.swift */,
+				EFA10FAD25F8FFB400F7C79D /* Auth */,
+				EFA10FAC25F8FFA300F7C79D /* TableView */,
+				EFA10FAB25F8F97F00F7C79D /* Comment */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -305,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA10FA925F8F96700F7C79D /* CCommentVC.swift in Sources */,
 				EF49836425D573EE00357307 /* AVC.swift in Sources */,
 				EF5BC2A425CD932B004E8F36 /* ViewController.swift in Sources */,
 				EF5BC2A025CD932B004E8F36 /* AppDelegate.swift in Sources */,
@@ -312,8 +357,11 @@
 				EF49836725D573FB00357307 /* GVC.swift in Sources */,
 				EF49835E25D5735000357307 /* MenuVC.swift in Sources */,
 				EF49836A25D5740500357307 /* TVC.swift in Sources */,
+				EFA10FA625F8F95700F7C79D /* TCommentVC.swift in Sources */,
 				EF49835525D5730700357307 /* LoginVC.swift in Sources */,
+				EFA10F9F25F8F93000F7C79D /* ACommentVC.swift in Sources */,
 				EF49836D25D5740E00357307 /* CVC.swift in Sources */,
+				EFA10FA325F8F94900F7C79D /* GCommentVC.swift in Sources */,
 				EF2B79D125E2A33A00EB6A56 /* HTTPClient.swift in Sources */,
 				EF49835825D5731900357307 /* SignUpVC.swift in Sources */,
 				EF5BC2A225CD932B004E8F36 /* SceneDelegate.swift in Sources */,
