@@ -12,10 +12,16 @@ import Alamofire
 enum NetworkingAPI{
     case email
     case refreshToken
-    case SignUp(_ name: String, _ email: String, _ password: String)
+    case signUp(_ name: String, _ email: String, _ password: String)
     case Login(_ email: String, _ password: String)
-    case CommentList(_ size: Int, _ page: Int)
-    case CommentWr(_ timelineId: Int, _ content: String)
+    case Logout
+    case commentList(_ size: Int, _ page: Int)
+    case commentWr(_ timelineId: Int, _ content: String)
+    case deleteComment
+    case timeLine(_ size: Int, _ page: Int)
+    case timeLineWr(_ title: String, _ content: String, _ type: String)
+    case deleteTimeLine
+    
     
     var path: String {
         switch self {
@@ -23,16 +29,27 @@ enum NetworkingAPI{
             return "/email?email=" + ConfirmEmail
         case .Login, .refreshToken :
             return "/auth"
-        case .SignUp :
+        case .Logout:
+            return "/logout"
+        case .signUp :
             return "/signup"
-        case .CommentList, .CommentWr :
+        case .commentList, .commentWr :
             return "/comment"
+        case .deleteComment:
+            return "/comment"
+        case .timeLine:
+            return "/timeline/{type}?size=&page="
+        case .timeLineWr:
+            return "/timeline"
+        case .deleteTimeLine:
+            return "/timeline"
+            
         }
     }
     
     var headers: HTTPHeaders? {
         switch self {
-        case .Login, .SignUp, .email:
+        case .Login, .signUp, .email:
             return nil
         case .refreshToken :
             let refreshToken : String = "token"
@@ -58,7 +75,7 @@ enum NetworkingAPI{
             print(["email":email, "password":password])
             return ["email":email, "password":password]
         
-        case .SignUp(let name, let email, let password):
+        case .signUp(let name, let email, let password):
             print(["name":name, "email":email, "password":password])
             return ["name":name, "email":email, "password":password]
             
