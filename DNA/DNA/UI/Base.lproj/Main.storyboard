@@ -445,7 +445,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98039215686274506" green="0.99215686274509807" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="140" id="Fun-3Z-FmW">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ACell" rowHeight="140" id="Fun-3Z-FmW" customClass="ACell" customModule="DNA" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fun-3Z-FmW" id="ngQ-F6-Tht">
@@ -545,6 +545,15 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.98039215690000003" green="0.99215686270000003" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="background" destination="M4r-F3-wqC" id="uKI-6U-acO"/>
+                                            <outlet property="dayLabel" destination="Im5-Yv-F7j" id="x1w-Y9-VFA"/>
+                                            <outlet property="deleteBtn" destination="dsz-9M-eWf" id="DP7-l3-Cgo"/>
+                                            <outlet property="detailTxt" destination="Jag-Ar-K0z" id="hhP-Lu-UtQ"/>
+                                            <outlet property="nameLabel" destination="5hU-iF-tOS" id="rk0-Q8-iUr"/>
+                                            <outlet property="titleLabel" destination="u4I-ig-ZID" id="Bim-hT-3ok"/>
+                                            <outlet property="yearMonthLabel" destination="8YZ-fV-Ahw" id="kUV-ao-H1B"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -553,6 +562,9 @@
                         <color key="backgroundColor" red="0.98039215686274506" green="0.99215686274509807" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="mlq-Vp-cWy"/>
+                    <connections>
+                        <outlet property="tableView" destination="tf0-n8-pPf" id="TCS-bN-43v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R64-ZG-TzV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
