@@ -1,20 +1,29 @@
 //
-//  GCommentVC.swift
+//  TVC.swift
 //  DNA
 //
-//  Created by 장서영 on 2021/03/10.
+//  Created by 장서영 on 2021/02/11.
 //
 
 import UIKit
 
-class GCommentVC: UIViewController {
-
+class TViewController: UIViewController/*, UITableViewDelegate, UITableViewDataSource*/  {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setNavigationBar()
         // Do any additional setup after loading the view.
     }
     
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        <#code#>
+//    }
+//    
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        <#code#>
+//    }
+    
+
 
     /*
     // MARK: - Navigation

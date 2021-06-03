@@ -1,17 +1,17 @@
 //
-//  LogoutVC.swift
+//  CCommentVC.swift
 //  DNA
 //
-//  Created by 장서영 on 2021/02/11.
+//  Created by 장서영 on 2021/03/10.
 //
 
 import UIKit
 
-class LogoutVC: UIViewController {
+class CCommentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setNavigationBar()
         // Do any additional setup after loading the view.
     }
     

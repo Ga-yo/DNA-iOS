@@ -8,9 +8,8 @@
 import UIKit
 import Alamofire
 
-var signInModel = [SignInModel]()
 
-class LoginVC: UIViewController {
+class LoginViewController: UIViewController {
     
     @IBOutlet weak var circle: UIView!
     @IBOutlet weak var emailTxt: UITextField!
@@ -24,16 +23,10 @@ class LoginVC: UIViewController {
     
     let httpClient = HTTPClient()
     
-    private var signInmodel: SignInModel?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        circle.layer.cornerRadius = 0.5 * circle.bounds.size.width
-        emailTxt.layer.cornerRadius = 22
-        pwTxt.layer.cornerRadius = 22
-        signInButton.layer.cornerRadius = 22
-        warningLabel.isHidden = true
+        setNavigationBar()
     }
     
     @IBAction func signInButton(_ sender: UIButton!){
@@ -52,8 +45,7 @@ class LoginVC: UIViewController {
                 print("로그인 성공")
                 guard let data = response.data else {return}
                 guard let model = try? JSONDecoder().decode(SignInModel.self, from: data) else {return}
-                self.signInmodel = model
-                guard let pushVC = self.storyboard?.instantiateViewController(identifier: "MenuVC") as? MenuVC else {return}
+                guard let pushVC = self.storyboard?.instantiateViewController(identifier: "MenuVC") as? MenuViewController else {return}
                 self.navigationController?.pushViewController(pushVC, animated: true)
             case 400:
                 print("BAD REQUEST")

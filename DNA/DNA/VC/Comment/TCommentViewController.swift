@@ -1,17 +1,17 @@
 //
-//  TVC.swift
+//  TCommentVC.swift
 //  DNA
 //
-//  Created by 장서영 on 2021/02/11.
+//  Created by 장서영 on 2021/03/10.
 //
 
 import UIKit
 
-class TVC: UIViewController {
+class TCommentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setNavigationBar()
         // Do any additional setup after loading the view.
     }
     

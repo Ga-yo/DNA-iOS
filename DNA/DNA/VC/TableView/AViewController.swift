@@ -8,29 +8,32 @@
 import UIKit
 import Alamofire
 
-class AVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar()
         // Do any additional setup after loading the view.
-        
-        
-        tableView.dataSource = self
-        tableView.delegate = self
-
-        
     }
+    let httpClient = HTTPClient()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ACell") as! ACell
+        return cell
     }
     
+    func getTimeLine(_ type : String) {
+        httpClient
+            
+    }
+    
+   
 
     /*
     // MARK: - Navigation

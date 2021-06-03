@@ -7,9 +7,8 @@
 
 import UIKit
 
-var ConfirmEmail : String = ""
 
-class SignUpVC: UIViewController {
+class SignUpViewController: UIViewController {
     
     @IBOutlet weak var circle: UIView!
     @IBOutlet weak var nameTxt: UITextField!
@@ -28,21 +27,13 @@ class SignUpVC: UIViewController {
     }
     @IBOutlet weak var signUpButton: UIButton!
     
-    
+    let id = String()
     let httpclient = HTTPClient()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        circle.layer.cornerRadius = 0.5 * circle.bounds.size.width
-        nameTxt.layer.cornerRadius = 22
-        emailTxt.layer.cornerRadius = 22
-        confirmEmailButton.layer.cornerRadius = 12
-        pwTxt.layer.cornerRadius = 22
-        confirmPwTxt.layer.cornerRadius = 22
-        signUpButton.layer.cornerRadius = 22
-        warningLabel.isHidden = true
-        self.reloadInputViews()
+        setNavigationBar()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -50,9 +41,8 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func confirmEmailButton(_ sender: UIButton){
-        ConfirmEmail = emailTxt.text!
         print("tapped")
-        httpclient.get(.email).responseJSON(completionHandler: {
+        httpclient.get(.email(id)).responseJSON(completionHandler: {
             response in
             switch response.response?.statusCode {
             case 200 :
@@ -60,7 +50,7 @@ class SignUpVC: UIViewController {
                 self.confirmEmailButton.setTitle("확인완료", for: .normal)
             case 400: print("BAD REQUEST")
                 self.confirmEmailButton.setTitle("확인불가", for: .normal)
-            default : print(response.error)
+            default : print(response.error ?? 0)
             }
         })
     }
@@ -69,11 +59,11 @@ class SignUpVC: UIViewController {
         guard let Name = nameTxt.text else {return}
         guard let Email = emailTxt.text else {return}
         guard let Password = pwTxt.text else {return}
-        SignUp(name: Name, email: Email, password: Password)
+        signUp(name: Name, email: Email, password: Password)
     }
     
-    func SignUp(name: String, email: String, password: String){
-        httpclient.post(.SignUp(name, email, password)).responseJSON(completionHandler: {
+    func signUp(name: String, email: String, password: String){
+        httpclient.post(.signUp(name, email, password)).responseJSON(completionHandler: {
             response in
             switch response.response?.statusCode {
             case 201:
@@ -95,7 +85,7 @@ class SignUpVC: UIViewController {
                 self.warningLabel.isHidden = false
                 print("CONFLICT")
             default :
-                print(response.response?.statusCode)
+                print(response.response?.statusCode ?? 0)
             }
         })
     }

@@ -8,7 +8,7 @@
 import UIKit
 import DropDown
 
-class WritingVC: UIViewController {
+class WritingViewController: UIViewController {
     
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var SetCategoryButton: UIButton!
@@ -17,14 +17,13 @@ class WritingVC: UIViewController {
     @IBOutlet weak var registButton: UIButton!
     @IBOutlet weak var backregist: UIView!
     
-    
+    let httpClient = HTTPClient()
+    var selectedItem = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar()
         // Do any additional setup after loading the view.
-        backgroundView.layer.cornerRadius = 22
-        registButton.layer.cornerRadius = 16
-        backregist.layer.cornerRadius = 16
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -42,6 +41,26 @@ class WritingVC: UIViewController {
         
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             SetCategoryButton.setTitle("\(item)", for: .normal)
+            selectedItem = item
+        }
+    }
+    
+    func createPost() {
+        httpClient.post(.timeLineWr(titleTxt.text!, detailTxt.text, selectedItem)).responseJSON{(response) in
+            switch response.response?.statusCode {
+            case 201 : print("CREATED")
+            case 400:
+                print("BAD REQUEST")
+            case 401:
+                print("UNAUTHORIZED")
+            case 403:
+                print("FORBIDDEN")
+            case 404:
+                print("NOT FOUND")
+            case 409:
+                print("CONFLICT")
+            default :                                   print(response.response?.statusCode)
+            }
         }
     }
     

@@ -1,5 +1,5 @@
 //
-//  CCommentVC.swift
+//  GCommentVC.swift
 //  DNA
 //
 //  Created by 장서영 on 2021/03/10.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class CCommentVC: UIViewController {
+class GCommentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setNavigationBar()
         // Do any additional setup after loading the view.
     }
     

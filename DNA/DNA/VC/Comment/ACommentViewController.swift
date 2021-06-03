@@ -1,17 +1,17 @@
 //
-//  CVC.swift
+//  ACommentVC.swift
 //  DNA
 //
-//  Created by 장서영 on 2021/02/11.
+//  Created by 장서영 on 2021/03/10.
 //
 
 import UIKit
 
-class CVC: UIViewController {
+class ACommentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setNavigationBar()
         // Do any additional setup after loading the view.
     }
     
