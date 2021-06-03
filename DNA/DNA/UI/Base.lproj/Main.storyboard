@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s0F-yu-Jda">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ltd-4c-fdn">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -30,6 +30,11 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="6jV-Mm-9D5" kind="show" id="sVb-41-QOW"/>
                                 </connections>
@@ -42,6 +47,11 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="0.51764705882352935" green="0.66274509803921566" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="Ngi-ir-gar" kind="show" id="lr1-WN-nZ9"/>
                                 </connections>
@@ -76,12 +86,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jeU-wR-Zf8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2708" y="133.74384236453201"/>
+            <point key="canvasLocation" x="-505" y="1187"/>
         </scene>
-        <!--LoginVC-->
+        <!--Login View Controller-->
         <scene sceneID="pf0-0h-YZy">
             <objects>
-                <viewController id="6jV-Mm-9D5" customClass="LoginVC" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6jV-Mm-9D5" customClass="LoginViewController" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PyN-f2-G6S">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,6 +100,11 @@
                                 <rect key="frame" x="-112" y="292" width="600" height="600"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="300"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="화살표" translatesAutoresizingMaskIntoConstraints="NO" id="jqw-0t-J6F">
                                 <rect key="frame" x="169" y="232" width="38" height="74"/>
@@ -107,6 +122,11 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="signInButton:" destination="6jV-Mm-9D5" eventType="touchUpInside" id="Dbh-ST-qye"/>
                                 </connections>
@@ -117,8 +137,13 @@
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pf0-RF-BDa">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pf0-RF-BDa">
                                 <rect key="frame" x="96" y="545" width="184" height="13"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
@@ -138,6 +163,11 @@
                                 <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ake-im-vu9">
                                 <rect key="frame" x="168" y="135" width="41" height="21"/>
@@ -168,12 +198,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0FY-yC-3O5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3586" y="134"/>
+            <point key="canvasLocation" x="385" y="1523"/>
         </scene>
-        <!--View Controller-->
+        <!--Logout View Controller-->
         <scene sceneID="bO7-PA-rnu">
             <objects>
-                <viewController id="vIa-vi-1Zq" sceneMemberID="viewController">
+                <viewController id="vIa-vi-1Zq" customClass="LogoutViewController" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zsj-1L-ntQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,10 +219,10 @@
             </objects>
             <point key="canvasLocation" x="2820" y="1550"/>
         </scene>
-        <!--MenuVC-->
+        <!--Menu View Controller-->
         <scene sceneID="ZwP-Fz-A2b">
             <objects>
-                <viewController storyboardIdentifier="MenuVC" id="9iA-L8-YjJ" customClass="MenuVC" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuVC" id="9iA-L8-YjJ" customClass="MenuViewController" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ygI-0Z-0IO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -222,6 +252,20 @@
                                     </textView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.23137254901960785" green="0.41176470588235292" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="4" height="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyv-9A-TcQ">
                                 <rect key="frame" x="68" y="188" width="240" height="23"/>
@@ -259,32 +303,52 @@
                                 <rect key="frame" x="16" y="413" width="160" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="aOv-Br-IlB" kind="show" id="78i-6C-al2"/>
+                                    <segue destination="aOv-Br-IlB" kind="show" id="I68-jp-arv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2k-PR-nmg">
                                 <rect key="frame" x="199" y="413" width="160" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.792156862745098" green="0.90980392156862744" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="LQS-JP-zrZ" kind="show" id="CP0-AU-qGD"/>
+                                    <segue destination="LQS-JP-zrZ" kind="show" id="Vfg-vt-fcM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSq-ND-yrh">
                                 <rect key="frame" x="16" y="545" width="160" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.79215686269999996" green="0.90980392160000001" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="csR-1k-oLj" kind="show" id="6CX-0Q-ZWY"/>
+                                    <segue destination="csR-1k-oLj" kind="show" id="WtD-cr-pH8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cz-wh-0hF">
                                 <rect key="frame" x="199" y="545" width="160" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="5WQ-Js-niG" kind="show" id="AZF-vA-OAw"/>
+                                    <segue destination="5WQ-Js-niG" kind="show" id="aIZ-hh-lz5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8x-fF-E9J">
@@ -390,9 +454,7 @@
                         <viewLayoutGuide key="safeArea" id="ZdY-ej-IXF"/>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.99215686274509807" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="Ȩ" id="AoA-Dt-mLV">
-                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="O5L-ya-c0W"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="AButton" destination="pcR-VZ-otl" id="Kmk-9h-oZK"/>
@@ -404,14 +466,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oZs-bX-vx6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3585" y="1550"/>
+            <point key="canvasLocation" x="3585" y="2250"/>
         </scene>
-        <!--AVC-->
+        <!--View Controller-->
         <scene sceneID="XvG-tl-884">
             <objects>
-                <viewController id="aOv-Br-IlB" customClass="AVC" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aOv-Br-IlB" customClass="AViewController" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5A3-h9-lgw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="44u-rg-cus">
@@ -420,7 +482,7 @@
                                 <color key="backgroundColor" red="0.90588235294117647" green="0.92549019607843142" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DH3-he-EqD">
-                                <rect key="frame" x="0.0" y="67" width="375" height="68"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvK-8a-w2r">
@@ -553,6 +615,7 @@
                                             <outlet property="nameLabel" destination="5hU-iF-tOS" id="rk0-Q8-iUr"/>
                                             <outlet property="titleLabel" destination="u4I-ig-ZID" id="Bim-hT-3ok"/>
                                             <outlet property="yearMonthLabel" destination="8YZ-fV-Ahw" id="kUV-ao-H1B"/>
+                                            <segue destination="CEd-a3-G2x" kind="show" id="g7z-ki-xH6"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -568,12 +631,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R64-ZG-TzV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2466" y="2296"/>
+            <point key="canvasLocation" x="2384.8000000000002" y="2998.5221674876848"/>
         </scene>
-        <!--View Controller-->
+        <!--Comment View Controller-->
         <scene sceneID="3SI-BW-Efv">
             <objects>
-                <viewController id="CEd-a3-G2x" sceneMemberID="viewController">
+                <viewController id="CEd-a3-G2x" customClass="ACommentViewController" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tEv-jx-GeZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -584,7 +647,7 @@
                                 <color key="backgroundColor" red="0.90588235289999997" green="0.92549019610000005" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Thn-iY-xlP">
-                                <rect key="frame" x="0.0" y="67" width="375" height="68"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gw3-wE-tWv">
@@ -777,12 +840,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xDk-UZ-ThB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2464.8000000000002" y="3034.729064039409"/>
+            <point key="canvasLocation" x="2384.8000000000002" y="3737.4384236453202"/>
         </scene>
-        <!--View Controller-->
+        <!--Comment View Controller-->
         <scene sceneID="dnN-xa-BBI">
             <objects>
-                <viewController id="doJ-mM-tsy" sceneMemberID="viewController">
+                <viewController id="doJ-mM-tsy" customClass="GCommentViewController" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G2u-rf-NPb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -793,7 +856,7 @@
                                 <color key="backgroundColor" red="0.90588235289999997" green="0.92549019610000005" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nYG-ah-8LX">
-                                <rect key="frame" x="0.0" y="67" width="375" height="68"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXL-0i-ZAz">
@@ -986,12 +1049,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Pt-wv-IfC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3310" y="3035"/>
+            <point key="canvasLocation" x="3184.8000000000002" y="3733.7438423645322"/>
         </scene>
-        <!--View Controller-->
+        <!--Comment View Controller-->
         <scene sceneID="TCd-HX-WZ0">
             <objects>
-                <viewController id="pUb-v3-XuT" sceneMemberID="viewController">
+                <viewController id="pUb-v3-XuT" customClass="TCommentViewController" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0wU-nw-KSc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1002,7 +1065,7 @@
                                 <color key="backgroundColor" red="0.90588235289999997" green="0.92549019610000005" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xvb-3c-V9h">
-                                <rect key="frame" x="0.0" y="67" width="375" height="68"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fjh-QY-FZH">
@@ -1195,12 +1258,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Kw-ER-bbo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4137" y="3035"/>
+            <point key="canvasLocation" x="3950" y="3734"/>
         </scene>
-        <!--View Controller-->
+        <!--Comment View Controller-->
         <scene sceneID="7SO-fa-IFL">
             <objects>
-                <viewController id="R2u-7u-HnS" sceneMemberID="viewController">
+                <viewController id="R2u-7u-HnS" customClass="CCommentViewController" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z7U-FI-e22">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1211,7 +1274,7 @@
                                 <color key="backgroundColor" red="0.90588235289999997" green="0.92549019610000005" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v9H-4u-9Af">
-                                <rect key="frame" x="0.0" y="67" width="375" height="68"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbl-DJ-VtN">
@@ -1404,14 +1467,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jjM-z0-U2g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4961" y="3035"/>
+            <point key="canvasLocation" x="4688.8000000000002" y="3733.7438423645322"/>
         </scene>
-        <!--CVC-->
+        <!--View Controller-->
         <scene sceneID="FNR-m3-Cmo">
             <objects>
-                <viewController id="5WQ-Js-niG" customClass="CVC" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5WQ-Js-niG" customClass="CViewController" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ArL-MR-724">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bBq-e9-bxn">
@@ -1420,7 +1483,7 @@
                                 <color key="backgroundColor" red="0.90588235289999997" green="0.92549019610000005" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zmr-Li-S1x">
-                                <rect key="frame" x="0.0" y="67" width="375" height="68"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfO-tW-zvb">
@@ -1545,6 +1608,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.98039215690000003" green="0.99215686270000003" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="R2u-7u-HnS" kind="show" id="Lwp-O2-I4e"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -1556,14 +1622,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zca-Fp-kPa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4962" y="2296"/>
+            <point key="canvasLocation" x="4688.8000000000002" y="2998.5221674876848"/>
         </scene>
-        <!--TVC-->
+        <!--View Controller-->
         <scene sceneID="qth-4b-6nk">
             <objects>
-                <viewController id="csR-1k-oLj" customClass="TVC" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="csR-1k-oLj" customClass="TViewController" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q88-dN-wQe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zmo-aY-0hf">
@@ -1572,7 +1638,7 @@
                                 <color key="backgroundColor" red="0.90588235289999997" green="0.92549019610000005" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="omH-zB-ElB">
-                                <rect key="frame" x="0.0" y="67" width="375" height="68"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nn-rr-HlO">
@@ -1697,6 +1763,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.98039215690000003" green="0.99215686270000003" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="pUb-v3-XuT" kind="show" id="u3v-iN-jzJ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -1708,14 +1777,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X42-Us-zCl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4138" y="2296"/>
+            <point key="canvasLocation" x="3949.5999999999999" y="2998.5221674876848"/>
         </scene>
-        <!--GVC-->
+        <!--View Controller-->
         <scene sceneID="cMC-Qd-QI1">
             <objects>
-                <viewController id="LQS-JP-zrZ" customClass="GVC" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LQS-JP-zrZ" customClass="GViewController" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CYu-8B-lXW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jkl-GX-cX8">
@@ -1724,7 +1793,7 @@
                                 <color key="backgroundColor" red="0.90588235289999997" green="0.92549019610000005" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kPm-sy-sOi">
-                                <rect key="frame" x="0.0" y="67" width="375" height="68"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiT-zP-nrY">
@@ -1849,6 +1918,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.98039215690000003" green="0.99215686270000003" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="doJ-mM-tsy" kind="show" id="54Y-A4-7Hp"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -1860,12 +1932,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KbC-oD-d4w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3310" y="2296"/>
+            <point key="canvasLocation" x="3181.5999999999999" y="2995.5665024630543"/>
         </scene>
-        <!--WritingVC-->
+        <!--Writing View Controller-->
         <scene sceneID="18a-Ag-rSG">
             <objects>
-                <viewController id="6Vp-4K-TRF" customClass="WritingVC" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6Vp-4K-TRF" customClass="WritingViewController" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I2d-kZ-u2v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1874,6 +1946,11 @@
                                 <rect key="frame" x="17" y="144" width="342" height="503"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90588235294117647" green="0.92549019607843142" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="제목을 입력해 주세요" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5hN-RG-OV0">
                                 <rect key="frame" x="39" y="215" width="299" height="36"/>
@@ -1905,6 +1982,11 @@
                                 <rect key="frame" x="72" y="670" width="232" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.90588235294117647" green="0.92549019607843142" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H3U-hh-VRt">
                                 <rect key="frame" x="72" y="665" width="232" height="47"/>
@@ -1921,6 +2003,11 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="글쓰기" translatesAutoresizingMaskIntoConstraints="NO" id="Yl7-c3-0Y3">
                                 <rect key="frame" x="171" y="118" width="34" height="52"/>
@@ -1931,7 +2018,7 @@
                         <color key="backgroundColor" red="0.98039215686274506" green="0.99215686274509807" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="글" id="jMb-TU-133">
-                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="badgeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -1945,12 +2032,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvp-Bx-7Ab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4378" y="1550"/>
+            <point key="canvasLocation" x="4369" y="1550"/>
         </scene>
-        <!--Sign UpVC-->
+        <!--Sign Up View Controller-->
         <scene sceneID="c0C-Ys-yf1">
             <objects>
-                <viewController id="Ngi-ir-gar" customClass="SignUpVC" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ngi-ir-gar" customClass="SignUpViewController" customModule="DNA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MsR-Sl-Xun">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1959,6 +2046,11 @@
                                 <rect key="frame" x="-112" y="292" width="600" height="600"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="300"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3EI-Ve-JWb">
                                 <rect key="frame" x="55" y="620" width="265" height="44"/>
@@ -1968,6 +2060,11 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="signUpButton:" destination="Ngi-ir-gar" eventType="touchUpInside" id="qhV-pn-hni"/>
                                 </connections>
@@ -1978,6 +2075,11 @@
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password를 확인하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pjh-nf-Qlq">
                                 <rect key="frame" x="55" y="548" width="265" height="44"/>
@@ -1985,8 +2087,13 @@
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRY-Y7-nYj">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRY-Y7-nYj">
                                 <rect key="frame" x="118" y="470" width="140" height="9"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
@@ -2006,6 +2113,11 @@
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이름을 입력하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CdS-MR-8vF">
                                 <rect key="frame" x="55" y="362" width="265" height="44"/>
@@ -2013,6 +2125,11 @@
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGO-f1-oZO">
                                 <rect key="frame" x="263" y="434" width="45" height="24"/>
@@ -2022,6 +2139,11 @@
                                 <state key="normal" title="중복체크">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="confirmEmailButton:" destination="Ngi-ir-gar" eventType="touchUpInside" id="3cc-j0-PJa"/>
                                 </connections>
@@ -2066,7 +2188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CyF-Mh-Rq7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3585" y="-536"/>
+            <point key="canvasLocation" x="385" y="819"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BRo-AO-SAW">
@@ -2084,7 +2206,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eea-Ul-zzB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1765.5999999999999" y="133.74384236453201"/>
+            <point key="canvasLocation" x="-1303" y="1187"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PiG-wt-RI3">
@@ -2099,7 +2221,7 @@
                         <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9iA-L8-YjJ" kind="relationship" relationship="viewControllers" id="Rh0-Bi-aye"/>
+                        <segue destination="0ji-hy-ckH" kind="relationship" relationship="viewControllers" id="Rh0-Bi-aye"/>
                         <segue destination="vIa-vi-1Zq" kind="relationship" relationship="viewControllers" id="cej-Ga-OWh"/>
                         <segue destination="6Vp-4K-TRF" kind="relationship" relationship="viewControllers" id="q4s-iG-aZg"/>
                     </connections>
@@ -2108,22 +2230,43 @@
             </objects>
             <point key="canvasLocation" x="3584.8000000000002" y="819.45812807881782"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0Fv-hZ-Zvc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0ji-hy-ckH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Ȩ" id="AoA-Dt-mLV">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="40m-xK-15N">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9iA-L8-YjJ" kind="relationship" relationship="rootViewController" id="Dhl-VP-uvo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="glR-D6-yk1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3584.8000000000002" y="1549.5073891625616"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Ȩ" width="37" height="37"/>
-        <image name="그룹 63" width="41" height="34"/>
-        <image name="그룹 78" width="40" height="34"/>
+        <image name="그룹 63" width="13.666666984558105" height="11.333333015441895"/>
+        <image name="그룹 78" width="13.333333015441895" height="11.333333015441895"/>
         <image name="글" width="33" height="33"/>
-        <image name="글쓰기" width="34" height="53"/>
-        <image name="남자" width="46" height="61"/>
+        <image name="글쓰기" width="11.333333015441895" height="17.666666030883789"/>
+        <image name="남자" width="15.333333015441895" height="20.333333969116211"/>
         <image name="로그아웃" width="33" height="33"/>
-        <image name="로그인" width="310" height="164"/>
-        <image name="메인" width="313" height="281"/>
-        <image name="여자" width="59" height="58"/>
-        <image name="카테고리" width="18" height="14"/>
-        <image name="홈버튼화살표" width="28" height="53"/>
-        <image name="화분" width="16" height="14"/>
-        <image name="화살표" width="38" height="74"/>
+        <image name="로그인" width="103.33333587646484" height="54.666667938232422"/>
+        <image name="메인" width="104.33333587646484" height="93.666664123535156"/>
+        <image name="여자" width="19.666666030883789" height="19.333333969116211"/>
+        <image name="카테고리" width="6" height="4.6666665077209473"/>
+        <image name="홈버튼화살표" width="9.3333330154418945" height="17.666666030883789"/>
+        <image name="화분" width="5.3333334922790527" height="4.6666665077209473"/>
+        <image name="화살표" width="12.666666984558105" height="24.666666030883789"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

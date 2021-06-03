@@ -15,8 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        signInButton.layer.cornerRadius = 22
-        signUpBUtton.layer.cornerRadius = 22
+        setNavigationBar()
     }
     
 

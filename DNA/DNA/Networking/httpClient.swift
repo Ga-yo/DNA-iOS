@@ -9,30 +9,50 @@ import Foundation
 import Alamofire
 
 protocol HTTPCleintProvider {
-    func get(_ api: NetworkingAPI) -> DataRequest
-    func post(_ api: NetworkingAPI) -> DataRequest
-    func put(_ api: NetworkingAPI) -> DataRequest
-    func delete(_ api: NetworkingAPI) -> DataRequest
+    func get(url: String, params: Parameters?, header: HTTPHeaders) -> DataRequest
+    func post(url: String, params: Parameters?, header: HTTPHeaders) -> DataRequest
+    func put(url: String, params: Parameters?, header: HTTPHeaders) -> DataRequest
+    func delete(url: String, params: Parameters?, header: HTTPHeaders) -> DataRequest
+    
 }
 
 class HTTPClient: HTTPCleintProvider {
+    
     let baseURL = "http://211.38.86.92:8080"
     
-    func get(_ api: NetworkingAPI) -> DataRequest {
-        return AF.request(baseURL + api.path, method: .get, parameters: api.parameters, encoding: URLEncoding.default, headers: api.headers, interceptor: nil)
+    func get(url: String, params: Parameters?, header: HTTPHeaders) -> DataRequest {
+        return AF.request(baseURL + url,
+                          method: .get,
+                          parameters: params,
+                          encoding: URLEncoding.default,
+                          headers: header,
+                          interceptor: nil)
     }
     
-    func post(_ api: NetworkingAPI) -> DataRequest {
-        return AF.request(baseURL + api.path, method: .post, parameters: api.parameters, encoding:JSONEncoding.prettyPrinted, headers: api.headers, interceptor: nil)
+    func post(url: String, params: Parameters?, header: HTTPHeaders) -> DataRequest {
+        return AF.request(baseURL + url,
+                          method: .get,
+                          parameters: params,
+                          encoding: URLEncoding.default,
+                          headers: header,
+                          interceptor: nil)
     }
     
-    func put(_ api: NetworkingAPI) -> DataRequest {
-        return AF.request(baseURL + api.path, method: .put, parameters: api.parameters, encoding: JSONEncoding.prettyPrinted, headers: api.headers, interceptor: nil)
+    func put(url: String, params: Parameters?, header: HTTPHeaders) -> DataRequest {
+        return AF.request(baseURL + url,
+                          method: .get,
+                          parameters: params,
+                          encoding: URLEncoding.default,
+                          headers: header,
+                          interceptor: nil)
     }
     
-    func delete(_ api: NetworkingAPI) -> DataRequest {
-        return AF.request(baseURL + api.path, method: .delete, parameters: api.parameters, encoding: JSONEncoding.prettyPrinted, headers: api.headers, interceptor: nil)
+    func delete(url: String, params: Parameters?, header: HTTPHeaders) -> DataRequest {
+        return AF.request(baseURL + url,
+                          method: .get,
+                          parameters: params,
+                          encoding: URLEncoding.default,
+                          headers: header,
+                          interceptor: nil)
     }
-    
-    
 }

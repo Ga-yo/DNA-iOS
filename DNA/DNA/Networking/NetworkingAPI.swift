@@ -8,25 +8,25 @@
 import Foundation
 import Alamofire
 
-
 enum NetworkingAPI{
-    case email
+    case email(_ confirmId: String)
     case refreshToken
     case signUp(_ name: String, _ email: String, _ password: String)
     case Login(_ email: String, _ password: String)
     case Logout
+    
     case commentList(_ size: Int, _ page: Int)
     case commentWr(_ timelineId: Int, _ content: String)
     case deleteComment
-    case timeLine(_ size: Int, _ page: Int)
+    case timeLine(_ type : String)
     case timeLineWr(_ title: String, _ content: String, _ type: String)
     case deleteTimeLine
     
     
     var path: String {
         switch self {
-        case .email :
-            return "/email?email=" + ConfirmEmail
+        case .email(let confirmId) :
+            return "/email?email=" + confirmId
         case .Login, .refreshToken :
             return "/auth"
         case .Logout:
@@ -37,8 +37,8 @@ enum NetworkingAPI{
             return "/comment"
         case .deleteComment:
             return "/comment"
-        case .timeLine:
-            return "/timeline/{type}?size=&page="
+        case .timeLine(let type):
+            return "/timeline/\(type)?size=&page="
         case .timeLineWr:
             return "/timeline"
         case .deleteTimeLine:
