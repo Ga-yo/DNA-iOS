@@ -8,10 +8,25 @@
 import Foundation
 import Alamofire
 
+struct token {
+    var _token : String?
+    var token: String? {
+        
+    }
+}
+
 enum Header {
     case token, tokenIsEmpty
     
-    func headers() -> HTTPheaders {
-        
-    }
+    func getHeader() -> HTTPHeaders {
+         guard let token = Token.token else { return ["Content-Type" : "application/json"] }
+         
+         switch self {
+         case .tokenIsExist:
+             return HTTPHeaders(["x-access-token" : token, "Content-Type" : "application/json"])
+         case .tokenIsEmpty:
+             return HTTPHeaders(["Content-Type" : "application/json"])
+         }
+     }
+    
 }
