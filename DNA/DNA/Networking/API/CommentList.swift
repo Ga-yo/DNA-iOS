@@ -8,8 +8,8 @@
 import Foundation
 
 enum CommentList: API {
-    case commentList(_ size: Int, _ page: Int)
-    case commentWr(_ timelineId: Int, _ content: String)
+    case commentList
+    case commentWr
     case deleteComment
     
     func path() -> String {

@@ -9,7 +9,7 @@ import Foundation
 
 enum ListAPI: API {
     case timeLine(_ type : String)
-    case timeLineWr(_ title: String, _ content: String, _ type: String)
+    case timeLineWr
     case deleteTimeLine
     
     func path() -> String {

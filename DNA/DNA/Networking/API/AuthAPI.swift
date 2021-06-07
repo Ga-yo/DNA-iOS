@@ -10,8 +10,8 @@ import Foundation
 enum AuthAPI : API {
     case email(_ confirmId: String)
     case refreshToken
-    case signUp(_ name: String, _ email: String, _ password: String)
-    case Login(_ email: String, _ password: String)
+    case signUp
+    case Login
     case Logout
     
     func path() -> String {
