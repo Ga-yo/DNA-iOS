@@ -39,7 +39,7 @@ class LoginViewController: UIViewController {
     
     func SignIn(email: String, password: String){
         print("로그인")
-        httpClient.post(.Login(email, password)).responseJSON(completionHandler: {(response) in
+        httpClient.post().responseJSON(completionHandler: {(response) in
             switch response.response?.statusCode {
             case 201:
                 print("로그인 성공")
@@ -58,7 +58,7 @@ class LoginViewController: UIViewController {
             case 409:
                 print("CONFLICT")
             default :
-                self.warningLabel.isHidden = false
+                //self.warningLabel.isHidden = false
                 print(response.response?.statusCode)
             }
         })
