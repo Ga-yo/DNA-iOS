@@ -2,12 +2,20 @@
 //  TCell.swift
 //  DNA
 //
-//  Created by 장서영 on 2021/03/18.
+//  Created by 장서영 on 2021/06/09.
 //
 
 import UIKit
 
 class TCell: UITableViewCell {
+    
+    @IBOutlet weak var background: UIView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var yearMonthLabel: UILabel!
+    @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var detailTxt: UITextView!
+    @IBOutlet weak var deleteBtn: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -1,16 +1,15 @@
 //
-//  LoginVC.swift
+//  LoginViewController.swift
 //  DNA
 //
-//  Created by 장서영 on 2021/02/11.
+//  Created by 장서영 on 2021/06/09.
 //
 
 import UIKit
 import Alamofire
 
-
 class LoginViewController: UIViewController {
-    
+
     @IBOutlet weak var circle: UIView!
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var pwTxt: UITextField!{
@@ -39,7 +38,7 @@ class LoginViewController: UIViewController {
     
     func SignIn(email: String, password: String){
         print("로그인")
-        httpClient.post().responseJSON(completionHandler: {(response) in
+        httpClient.post(url: AuthAPI.Login.path(), params: ["email":email, "password":password], header: Header.tokenIsEmpty.header()).responseJSON(completionHandler: {(response) in
             switch response.response?.statusCode {
             case 201:
                 print("로그인 성공")
@@ -63,15 +62,5 @@ class LoginViewController: UIViewController {
             }
         })
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+
 }

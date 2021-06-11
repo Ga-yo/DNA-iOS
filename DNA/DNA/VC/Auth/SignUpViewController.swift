@@ -1,15 +1,15 @@
 //
-//  SignUpVC.swift
+//  SignUpViewController.swift
 //  DNA
 //
-//  Created by 장서영 on 2021/02/11.
+//  Created by 장서영 on 2021/06/09.
 //
 
 import UIKit
-
+import Alamofire
 
 class SignUpViewController: UIViewController {
-    
+
     @IBOutlet weak var circle: UIView!
     @IBOutlet weak var nameTxt: UITextField!
     @IBOutlet weak var emailTxt: UITextField!
@@ -42,7 +42,7 @@ class SignUpViewController: UIViewController {
     
     @IBAction func confirmEmailButton(_ sender: UIButton){
         print("tapped")
-        httpclient.get(.email(id)).responseJSON(completionHandler: {
+        httpclient.get(url: AuthAPI.email(id).path(), params: nil, header: Header.tokenIsEmpty.header()).responseJSON(completionHandler: {
             response in
             switch response.response?.statusCode {
             case 200 :
@@ -63,7 +63,7 @@ class SignUpViewController: UIViewController {
     }
     
     func signUp(name: String, email: String, password: String){
-        httpclient.post(.signUp(name, email, password)).responseJSON(completionHandler: {
+        httpclient.post(url: AuthAPI.signUp.path(), params: ["name":name, "email":email, "password":password], header: Header.tokenIsEmpty.header()).responseJSON(completionHandler: {
             response in
             switch response.response?.statusCode {
             case 201:
@@ -89,16 +89,4 @@ class SignUpViewController: UIViewController {
             }
         })
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }

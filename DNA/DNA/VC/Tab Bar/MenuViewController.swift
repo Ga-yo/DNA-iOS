@@ -1,30 +1,20 @@
 //
-//  MenuVC.swift
+//  MenuViewController.swift
 //  DNA
 //
-//  Created by 장서영 on 2021/02/11.
+//  Created by 장서영 on 2021/06/09.
 //
 
 import UIKit
 
 class MenuViewController: UIViewController {
-    
-    @IBOutlet weak var mainView: UIView!
-    @IBOutlet weak var AButton: UIButton!
-    @IBOutlet weak var TButton: UIButton!
-    @IBOutlet weak var GButton: UIButton!
-    @IBOutlet weak var CButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
-        setNavigationBar()
-        shadow(AButton)
-        shadow(TButton)
-        shadow(GButton)
-        shadow(CButton)
-        
     }
+    
 
     /*
     // MARK: - Navigation

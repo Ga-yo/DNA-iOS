@@ -1,15 +1,16 @@
 //
-//  WritingVC.swift
+//  WritingViewController.swift
 //  DNA
 //
-//  Created by 장서영 on 2021/02/11.
+//  Created by 장서영 on 2021/06/09.
 //
 
 import UIKit
+import Alamofire
 import DropDown
 
 class WritingViewController: UIViewController {
-    
+
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var SetCategoryButton: UIButton!
     @IBOutlet weak var titleTxt: UITextField!
@@ -45,8 +46,8 @@ class WritingViewController: UIViewController {
         }
     }
     
-    func createPost() {
-        httpClient.post(.timeLineWr(titleTxt.text!, detailTxt.text, selectedItem)).responseJSON{(response) in
+    func createPost(title: String, content: String, type: String) {
+        httpClient.post(url: ListAPI.timeLineWr.path(), params: ["title" : title, "content": content, "type" : type], header: Header.token.header()).responseJSON{(response) in
             switch response.response?.statusCode {
             case 201 : print("CREATED")
             case 400:
@@ -59,19 +60,9 @@ class WritingViewController: UIViewController {
                 print("NOT FOUND")
             case 409:
                 print("CONFLICT")
-            default :                                   print(response.response?.statusCode)
+            default :
+                print(response.response?.statusCode)
             }
         }
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }

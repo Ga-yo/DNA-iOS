@@ -6,6 +6,7 @@ target 'DNA' do
   use_frameworks!
 
   # Pods for DNA
-pod 'Alamofire', '~>5.2'
+  pod 'Alamofire', '~>5.2'
 pod 'DropDown'
+
 end

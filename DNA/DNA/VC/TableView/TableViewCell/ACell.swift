@@ -2,7 +2,7 @@
 //  ACell.swift
 //  DNA
 //
-//  Created by 장서영 on 2021/03/18.
+//  Created by 장서영 on 2021/06/09.
 //
 
 import UIKit
@@ -17,6 +17,7 @@ class ACell: UITableViewCell {
     @IBOutlet weak var detailTxt: UITextView!
     @IBOutlet weak var deleteBtn: UIButton!
 
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,6 +25,7 @@ class ACell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+
         // Configure the view for the selected state
     }
 

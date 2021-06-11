@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  DNA
 //
-//  Created by 장서영 on 2021/02/05.
+//  Created by 장서영 on 2021/06/09.
 //
 
 import UIKit

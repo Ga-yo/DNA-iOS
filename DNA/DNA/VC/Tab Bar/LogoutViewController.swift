@@ -1,8 +1,8 @@
 //
-//  LogoutVC.swift
+//  LogoutViewController.swift
 //  DNA
 //
-//  Created by 장서영 on 2021/02/11.
+//  Created by 장서영 on 2021/06/09.
 //
 
 import UIKit
@@ -11,11 +11,9 @@ class LogoutViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setNavigationBar()
+
         // Do any additional setup after loading the view.
     }
-    
-    
     
 
     /*

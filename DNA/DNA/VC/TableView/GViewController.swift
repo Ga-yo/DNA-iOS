@@ -1,27 +1,21 @@
 //
-//  GVC.swift
+//  GViewController.swift
 //  DNA
 //
-//  Created by 장서영 on 2021/02/11.
+//  Created by 장서영 on 2021/06/09.
 //
 
 import UIKit
 
-class GViewController: UIViewController/*, UITableViewDelegate, UITableViewDataSource */ {
+class GViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        setNavigationBar()
+
         // Do any additional setup after loading the view.
     }
-    
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        <#code#>
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        <#code#>
-//    }
     
 
     /*
