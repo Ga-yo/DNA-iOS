@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		525B62AAA730A8533295E943 /* Pods_DNA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2D8AEF25646C284EB89224 /* Pods_DNA.framework */; };
+		EF13605B2693D39600E7E9FD /* TimeLineResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF13605A2693D39600E7E9FD /* TimeLineResponseModel.swift */; };
 		EF8BABD02671FB7C006888AE /* ACommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8BABCF2671FB7C006888AE /* ACommentViewController.swift */; };
 		EF8BABD42671FB98006888AE /* GCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8BABD32671FB98006888AE /* GCommentViewController.swift */; };
 		EF8BABD62671FB9F006888AE /* TCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8BABD52671FB9F006888AE /* TCommentViewController.swift */; };
@@ -24,6 +25,8 @@
 		EF99A12D2670D69800CF8CE2 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF99A12C2670D69800CF8CE2 /* HTTPClient.swift */; };
 		EF99A130267187A000CF8CE2 /* NanumGothic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF99A12F2671876E00CF8CE2 /* NanumGothic.otf */; };
 		EF99A131267187A400CF8CE2 /* NanumGothicBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF99A12E2671876E00CF8CE2 /* NanumGothicBold.otf */; };
+		EFBF03A3268AC02E009CB522 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFBF03A2268AC02E009CB522 /* Auth.storyboard */; };
+		EFBF03A5268AC3C5009CB522 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBF03A4268AC3C5009CB522 /* MainTabBarViewController.swift */; };
 		EFFA5D0126703423004A5051 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA5D0026703423004A5051 /* AppDelegate.swift */; };
 		EFFA5D0326703423004A5051 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA5D0226703423004A5051 /* SceneDelegate.swift */; };
 		EFFA5D0526703423004A5051 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA5D0426703423004A5051 /* ViewController.swift */; };
@@ -32,7 +35,6 @@
 		EFFA5D0D26703425004A5051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFA5D0B26703425004A5051 /* LaunchScreen.storyboard */; };
 		EFFA5D1B2670C781004A5051 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA5D1A2670C781004A5051 /* ViewControllerExtension.swift */; };
 		EFFA5D202670C7D2004A5051 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA5D1F2670C7D2004A5051 /* SignInModel.swift */; };
-		EFFA5D222670C845004A5051 /* TimeLineResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA5D212670C845004A5051 /* TimeLineResponseModel.swift */; };
 		EFFA5D242670C856004A5051 /* MainListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA5D232670C856004A5051 /* MainListModel.swift */; };
 		EFFA5D262670C873004A5051 /* CommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA5D252670C873004A5051 /* CommentResponse.swift */; };
 		EFFA5D282670C890004A5051 /* CommentListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA5D272670C890004A5051 /* CommentListModel.swift */; };
@@ -54,6 +56,7 @@
 /* Begin PBXFileReference section */
 		0942A28C3EA5D8319B033FC6 /* Pods-DNA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNA.debug.xcconfig"; path = "Target Support Files/Pods-DNA/Pods-DNA.debug.xcconfig"; sourceTree = "<group>"; };
 		7D65417D055BEC8A8AB319F9 /* Pods-DNA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNA.release.xcconfig"; path = "Target Support Files/Pods-DNA/Pods-DNA.release.xcconfig"; sourceTree = "<group>"; };
+		EF13605A2693D39600E7E9FD /* TimeLineResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineResponseModel.swift; sourceTree = "<group>"; };
 		EF8BABCF2671FB7C006888AE /* ACommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACommentViewController.swift; sourceTree = "<group>"; };
 		EF8BABD32671FB98006888AE /* GCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCommentViewController.swift; sourceTree = "<group>"; };
 		EF8BABD52671FB9F006888AE /* TCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCommentViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 		EF99A12C2670D69800CF8CE2 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		EF99A12E2671876E00CF8CE2 /* NanumGothicBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicBold.otf; sourceTree = "<group>"; };
 		EF99A12F2671876E00CF8CE2 /* NanumGothic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothic.otf; sourceTree = "<group>"; };
+		EFBF03A2268AC02E009CB522 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		EFBF03A4268AC3C5009CB522 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		EFFA5CFD26703423004A5051 /* DNA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFFA5D0026703423004A5051 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFFA5D0226703423004A5051 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,7 +85,6 @@
 		EFFA5D0E26703425004A5051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFFA5D1A2670C781004A5051 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		EFFA5D1F2670C7D2004A5051 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
-		EFFA5D212670C845004A5051 /* TimeLineResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineResponseModel.swift; sourceTree = "<group>"; };
 		EFFA5D232670C856004A5051 /* MainListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListModel.swift; sourceTree = "<group>"; };
 		EFFA5D252670C873004A5051 /* CommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentResponse.swift; sourceTree = "<group>"; };
 		EFFA5D272670C890004A5051 /* CommentListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListModel.swift; sourceTree = "<group>"; };
@@ -187,7 +191,6 @@
 				EFFA5D142670C721004A5051 /* Networking */,
 				EFFA5D0026703423004A5051 /* AppDelegate.swift */,
 				EFFA5D0226703423004A5051 /* SceneDelegate.swift */,
-				EFFA5D0426703423004A5051 /* ViewController.swift */,
 				EFFA5D0926703425004A5051 /* Assets.xcassets */,
 				EFFA5D0B26703425004A5051 /* LaunchScreen.storyboard */,
 				EFFA5D0E26703425004A5051 /* Info.plist */,
@@ -240,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				EFFA5D0626703423004A5051 /* Main.storyboard */,
+				EFBF03A2268AC02E009CB522 /* Auth.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -256,8 +260,8 @@
 		EFFA5D1D2670C7B5004A5051 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				EFFA5D212670C845004A5051 /* TimeLineResponseModel.swift */,
 				EFFA5D232670C856004A5051 /* MainListModel.swift */,
+				EF13605A2693D39600E7E9FD /* TimeLineResponseModel.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -288,6 +292,7 @@
 				EFFA5D312670CBB2004A5051 /* LogoutViewController.swift */,
 				EFFA5D332670CBB8004A5051 /* MenuViewController.swift */,
 				EFFA5D352670CBC3004A5051 /* WritingViewController.swift */,
+				EFBF03A4268AC3C5009CB522 /* MainTabBarViewController.swift */,
 			);
 			path = "Tab Bar";
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 		EFFA5D2C2670CB6E004A5051 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				EFFA5D0426703423004A5051 /* ViewController.swift */,
 				EFFA5D2D2670CB8C004A5051 /* LoginViewController.swift */,
 				EFFA5D2F2670CB93004A5051 /* SignUpViewController.swift */,
 			);
@@ -383,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFBF03A3268AC02E009CB522 /* Auth.storyboard in Resources */,
 				EFFA5D0D26703425004A5051 /* LaunchScreen.storyboard in Resources */,
 				EFFA5D0A26703425004A5051 /* Assets.xcassets in Resources */,
 				EFFA5D0826703423004A5051 /* Main.storyboard in Resources */,
@@ -459,6 +466,7 @@
 				EFFA5D342670CBB8004A5051 /* MenuViewController.swift in Sources */,
 				EF8BABD02671FB7C006888AE /* ACommentViewController.swift in Sources */,
 				EFFA5D0326703423004A5051 /* SceneDelegate.swift in Sources */,
+				EF13605B2693D39600E7E9FD /* TimeLineResponseModel.swift in Sources */,
 				EFFA5D432670CD0B004A5051 /* TCell.swift in Sources */,
 				EF99A1232670D46C00CF8CE2 /* Header.swift in Sources */,
 				EFFA5D3F2670CCF8004A5051 /* ACell.swift in Sources */,
@@ -469,13 +477,13 @@
 				EF99A1252670D49700CF8CE2 /* APIProvider.swift in Sources */,
 				EF8BABE12671FBD5006888AE /* CCommentTableViewCell.swift in Sources */,
 				EFFA5D472670CD54004A5051 /* AViewController.swift in Sources */,
+				EFBF03A5268AC3C5009CB522 /* MainTabBarViewController.swift in Sources */,
 				EFFA5D412670CD03004A5051 /* GCell.swift in Sources */,
 				EFFA5D4D2670CD63004A5051 /* CViewController.swift in Sources */,
 				EFFA5D322670CBB2004A5051 /* LogoutViewController.swift in Sources */,
 				EFFA5D492670CD59004A5051 /* GViewController.swift in Sources */,
 				EF8BABD62671FB9F006888AE /* TCommentViewController.swift in Sources */,
 				EF99A1292670D67400CF8CE2 /* ListAPI.swift in Sources */,
-				EFFA5D222670C845004A5051 /* TimeLineResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +632,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8G67LV27Z4;
 				INFOPLIST_FILE = DNA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -643,6 +652,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8G67LV27Z4;
 				INFOPLIST_FILE = DNA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
