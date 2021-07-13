@@ -9,13 +9,16 @@ import UIKit
 
 class GCommentTableViewCell: UITableViewCell {
     
-    @IBOutlet weak  var background: UIView!
+    @IBOutlet weak var background: UIView!
     @IBOutlet weak var nameLabel : UILabel!
     @IBOutlet weak var commentTextView: UITextView!
     @IBOutlet weak var deleteButton: UIButton!
 
+    var commentId = Int()
+
     override func awakeFromNib() {
         super.awakeFromNib()
+        nameLabel.adjustsFontSizeToFitWidth = true
         // Initialization code
     }
 
