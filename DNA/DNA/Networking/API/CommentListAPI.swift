@@ -10,7 +10,7 @@ import Foundation
 enum CommentListAPI: API {
     case commentList(_ id: Int)
     case commentWr
-    case deleteComment
+    case deleteComment(_ id: Int)
     
     func path() -> String {
         switch self {
@@ -18,8 +18,8 @@ enum CommentListAPI: API {
             return "/comment/\(id)?size=&page="
         case .commentWr :
             return "/comment"
-        case .deleteComment:
-            return "/comment"
+        case .deleteComment(let id):
+            return "/comment/\(id)"
         }
     }
 }

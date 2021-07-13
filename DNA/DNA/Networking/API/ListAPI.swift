@@ -10,7 +10,7 @@ import Foundation
 enum ListAPI: API {
     case timeLine(_ type : String)
     case timeLineWr
-    case deleteTimeLine
+    case deleteTimeLine(_ commentId: Int)
     
     func path() -> String {
         switch self {
@@ -18,8 +18,8 @@ enum ListAPI: API {
             return "/timeline/\(type)?size=&page="
         case .timeLineWr:
             return "/timeline"
-        case .deleteTimeLine:
-            return "/timeline"
+        case .deleteTimeLine(let commentId):
+            return "/timeline/\(commentId)"
         }
     }
 }
