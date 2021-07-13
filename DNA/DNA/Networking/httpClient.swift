@@ -18,7 +18,7 @@ protocol HTTPCleintProvider {
 
 class HTTPClient: HTTPCleintProvider {
     
-    let baseURL = "http://211.38.86.92:8080"
+    let baseURL = "http://211.38.86.92:9191"
     
     func get(url: String, params: Parameters?, header: HTTPHeaders) -> DataRequest {
         return AF.request(baseURL + url,
@@ -31,27 +31,27 @@ class HTTPClient: HTTPCleintProvider {
     
     func post(url: String, params: Parameters?, header: HTTPHeaders) -> DataRequest {
         return AF.request(baseURL + url,
-                          method: .get,
+                          method: .post,
                           parameters: params,
-                          encoding: URLEncoding.default,
+                          encoding: JSONEncoding.prettyPrinted,
                           headers: header,
                           interceptor: nil)
     }
     
     func put(url: String, params: Parameters?, header: HTTPHeaders) -> DataRequest {
         return AF.request(baseURL + url,
-                          method: .get,
+                          method: .put,
                           parameters: params,
-                          encoding: URLEncoding.default,
+                          encoding: JSONEncoding.prettyPrinted,
                           headers: header,
                           interceptor: nil)
     }
     
     func delete(url: String, params: Parameters?, header: HTTPHeaders) -> DataRequest {
         return AF.request(baseURL + url,
-                          method: .get,
+                          method: .delete,
                           parameters: params,
-                          encoding: URLEncoding.default,
+                          encoding: JSONEncoding.prettyPrinted,
                           headers: header,
                           interceptor: nil)
     }
