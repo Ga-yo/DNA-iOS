@@ -7,23 +7,21 @@
 
 import UIKit
 
-class LogoutViewController: UIViewController {
+final class LogoutViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction private func logoutButton(_ sender: UIButton){
+        warningAlert(title: "로그아웃 하시겠습니까?", message: nil, action: {[unowned self] action in logout()}, actionTitle: "Yes", cancelActionTitle: "No")
     }
-    */
-
+    
+    private func logout() {
+        Token.tokenRemove()
+        let sub = UIStoryboard(name: "Auth", bundle: nil)
+        let main = sub.instantiateViewController(withIdentifier: "AuthViewController") as! ViewController
+        navigationController?.setViewControllers([main], animated: true)
+    }
 }
