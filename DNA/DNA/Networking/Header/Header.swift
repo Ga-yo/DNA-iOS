@@ -21,31 +21,27 @@ struct Token {
         }
     }
     
+    
     static func tokenRemove() {
         token = nil
     }
 }
 
 enum Header {
-    case token, tokenIsEmpty
+    case token, tokenIsEmpty//, name, major
     
     func header() -> HTTPHeaders {
-        
-        do {
-            let token = Token.token
-        } catch {
-            print("error")
+        guard let token = Token.token else {
+            return ["Content-Type" : "application/json"]
         }
-//        guard let token = Token.token else {
-//            return ["Content-Type" : "application/json"]
-//        }
         
         switch self {
         case .token:
-            return ["Authorization" : "Bearer " + "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjMzMjE3NzYsInN1YiI6ImFzZGZhc2RmQGRzbS5ocy5rciIsImV4cCI6MTYyMzMyODk3NiwidHlwZSI6ImFjY2Vzc190b2tlbiJ9.8HvJqXaPfdlorpTqZJQLY5dUdZUxtDXcBPPQmptsaj8", "Content-Type" : "application/json"]
+            return HTTPHeaders(["Authorization" : "Bearer " + token, "Content-Type" : "application/json"])
+            
         case .tokenIsEmpty:
             return ["Content-Type" : "application/json"]
+
         }
     }
 }
-
