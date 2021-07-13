@@ -7,77 +7,88 @@
 
 import UIKit
 
-class AViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+final class AViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
     
-    private var MainListModel = [MainList]()
-
+    private var MainListModel = MainList()
+    private var timeLine : [TimeLine] = [TimeLine]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //setNavigationBar()
-        tableView.rowHeight = 140
-        tableView.dataSource = self
+        tableView.rowHeight = 150
         getList()
-        self.tableView.reloadData()
-        // Do any additional setup after loading the view.
+        tableView.reloadData()
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
     }
     
     override func viewWillAppear(_ animated: Bool) {
         getList()
-        self.tableView.reloadData()
+        tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return MainListModel.count
+        return MainListModel.timelineResponses.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ACell") as! ACell
         
-        let date = MainListModel[indexPath.row].timelineResponses[indexPath.row].createdAt
+        let date = MainListModel.timelineResponses[indexPath.row].createdAt
         
-        cell.nameLabel.text = MainListModel[indexPath.row].timelineResponses[indexPath.row].name
-        cell.titleLabel.text = MainListModel[indexPath.row].timelineResponses[indexPath.row].title
-        cell.detailTxt.text = MainListModel[indexPath.row].timelineResponses[indexPath.row].content
+        cell.nameLabel.text = MainListModel.timelineResponses[indexPath.row].name
+        cell.titleLabel.text = MainListModel.timelineResponses[indexPath.row].title
+        cell.detailTxt.text = MainListModel.timelineResponses[indexPath.row].content
         cell.yearMonthLabel.text = yearMonthFormat(date: date)
         cell.dayLabel.text = dayFormat(date: date)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let commentVC = self.storyboard?.instantiateViewController(identifier: "ACommentVC") as? ACommentViewController else {return}
+        guard let commentVC = storyboard?.instantiateViewController(withIdentifier: "ACommentVC") as? ACommentViewController else {return}
         
-        commentVC.id = MainListModel[indexPath.row].timelineResponses[indexPath.row].timelineId
-        self.navigationController?.pushViewController(commentVC, animated: true)
+        let date = MainListModel.timelineResponses[indexPath.row].createdAt
+        
+        commentVC.id = MainListModel.timelineResponses[indexPath.row].timelineId
+        commentVC.Title = MainListModel.timelineResponses[indexPath.row].title
+        commentVC.content = MainListModel.timelineResponses[indexPath.row].content
+        commentVC.name = MainListModel.timelineResponses[indexPath.row].name
+        commentVC.yearMonth = yearMonthFormat(date: date)
+        commentVC.day = dayFormat(date: date)
+        print(commentVC.id)
+        navigationController?.pushViewController(commentVC, animated: true)
     }
     
-    func getList() {
-        HTTPClient().get(url: ListAPI.timeLine("WORKER").path(), params: nil, header: Header.token.header()).responseJSON(completionHandler: { res in
+    @IBAction private func backButton(_ sender: UIBarButtonItem){
+        navigationController?.popViewController(animated: true)
+    }
+    
+    private func getList() {
+        HTTPClient().get(url: ListAPI.timeLine("WORKER").path(), params: nil, header: Header.token.header()).responseJSON(completionHandler: {[unowned self] res in
             switch res.response?.statusCode {
             case 200:
-                do {
-                    print("OK")
-                    let data = res.data
-                    let model = try JSONDecoder().decode(MainList.self, from: data!)
-//                    self.MainListModel.removeAll()
-//                    self.MainListModel.append(contentsOf: model)
-                    self.tableView.reloadData()
-                } catch {
-                    print(error)
-                }
+                let model = try? JSONDecoder().decode(MainList.self, from: res.data!)
+                MainListModel.timelineResponses.removeAll()
+                MainListModel.timelineResponses.append(contentsOf: model!.timelineResponses)
+                tableView.reloadData()
             case 400:
                 print("400 - BAD REQUEST")
+                errorAlert()
             case 401:
                 print("401 - UNAUTHORIZED")
+                errorAlert()
             case 403:
                 print("403 - FORBIDDEN")
+                errorAlert()
             case 404:
                 print("404 - NOT FOUND")
+                errorAlert()
             case 409:
                 print("409 - CONFLICT")
+                errorAlert()
             default:
                 print(res.response?.statusCode)
+                errorAlert()
             }
         })
     }
