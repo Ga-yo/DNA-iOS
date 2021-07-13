@@ -10,10 +10,5 @@ import Foundation
 struct MainList: Codable {
     var totalElements = Int()
     var totalPages = Int()
-    var timelineResponses = [TimeLine]()
-    
-    init(totalElements: Int, totalPages: Int) {
-        self.totalElements = totalElements
-        self.totalPages = totalPages
-    }
+    var timelineResponses : [TimeLine] = [TimeLine]()
 }

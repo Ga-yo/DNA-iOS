@@ -8,15 +8,15 @@
 import Foundation
 
 struct Comment: Codable {
-    var contentId = Int()
+    var commentId = Int()
     var content = String()
     var name = String()
-    var is_mine = Bool()
+    var isMine = Bool()
     
-    init(contentId: Int, content: String, name: String, is_mine: Bool) {
-        self.contentId = contentId
+    init(commentId: Int, content: String, name: String, isMine: Bool) {
+        self.commentId = commentId
         self.content = content
         self.name = name
-        self.is_mine = is_mine
+        self.isMine = isMine
     }
 }

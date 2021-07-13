@@ -11,9 +11,4 @@ struct CommentList: Codable {
     var totalElements = Int()
     var totalPages = Int()
     var commentResponses = [Comment]()
-    
-    init(totalElements: Int, totalPages: Int) {
-        self.totalElements = totalElements
-        self.totalPages = totalPages
-    }
 }
