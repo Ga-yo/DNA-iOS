@@ -36,4 +36,28 @@ extension UIViewController {
         
         return formatDate
     }
+    
+    func errorAlert(){
+        let alert = UIAlertController(title: "오류가 발생했습니다.", message: "다시 시도해 주세요.", preferredStyle: .actionSheet)
+        let cancelAction = UIAlertAction(title: "확인", style: .cancel, handler: nil)
+        alert.addAction(cancelAction)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func showAlert(title: String, message: String?, action: ((UIAlertAction) -> Void)?, actionTitle: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+        let setAction = UIAlertAction(title: actionTitle, style: .default, handler: action)
+        alert.addAction(setAction)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func warningAlert(title: String, message: String?, action:
+                        ((UIAlertAction)->Void)?, actionTitle: String, cancelActionTitle: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+        let cancelAction = UIAlertAction(title: cancelActionTitle, style: .cancel, handler: nil)
+        let setAction = UIAlertAction(title: actionTitle, style: .destructive, handler: action)
+        alert.addAction(cancelAction)
+        alert.addAction(setAction)
+        present(alert, animated: true, completion: nil)
+    }
 }
