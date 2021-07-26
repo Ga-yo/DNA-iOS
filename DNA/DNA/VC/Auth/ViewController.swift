@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController { //final class 선언해주기
     
     @IBOutlet weak private var signInButton: UIButton!
     @IBOutlet weak private var signUpButton: UIButton!
@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
+        //불필요한 주석 제거!
         // Do any additional setup after loading the view.
     }
 

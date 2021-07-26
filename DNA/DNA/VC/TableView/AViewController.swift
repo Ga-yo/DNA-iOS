@@ -7,6 +7,7 @@
 
 import UIKit
 
+//A, G, T, C 이게 다 의미가 있는건가??
 final class AViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet private weak var tableView: UITableView!

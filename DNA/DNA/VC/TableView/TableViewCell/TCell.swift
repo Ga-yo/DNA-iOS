@@ -27,5 +27,13 @@ class TCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+//  이렇게 해줄 수 있음
+//    func configCell(_ data: TimeLine) {
+//        nameLabel.text = data.name
+//        titleLabel.text = data.title
+//        detailTxt.text = data.content
+//        yearMonthLabel.text = yearMonthFormat(date: date)
+//        dayLabel.text = dayFormat(date: date)
+//    }
 }

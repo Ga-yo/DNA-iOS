@@ -35,8 +35,9 @@ final class LoginViewController: UIViewController {
         view.endEditing(true)
     }
     
+    //함수 이름 짓는거 잘못한 듯! 네이밍 컨벤션 lowerCamelcase면 바꿔야할듯
     private func SignIn(email: String, password: String){
-        print("로그인")
+        print("로그인")//테스트할때 사용한 프린트문은 이제 필요없으니까 지워도될듯
         HTTPClient().post(url: AuthAPI.Login.path(), params: ["email":email, "password":password], header: Header.tokenIsEmpty.header()).responseJSON(completionHandler: {[unowned self] response in
             switch response.response?.statusCode {
             case 201:

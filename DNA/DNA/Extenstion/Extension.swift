@@ -7,6 +7,7 @@
 
 import UIKit
 
+//보통 UIViewController를 Extension 해줄 때는 Extension.swift라고 많이 사용해
 extension UIViewController {
     func setNavigationBar(){
         let bar:UINavigationBar! =  self.navigationController?.navigationBar

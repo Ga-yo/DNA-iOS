@@ -33,7 +33,7 @@
 		EFFA5D0826703423004A5051 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFA5D0626703423004A5051 /* Main.storyboard */; };
 		EFFA5D0A26703425004A5051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFFA5D0926703425004A5051 /* Assets.xcassets */; };
 		EFFA5D0D26703425004A5051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFA5D0B26703425004A5051 /* LaunchScreen.storyboard */; };
-		EFFA5D1B2670C781004A5051 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA5D1A2670C781004A5051 /* ViewControllerExtension.swift */; };
+		EFFA5D1B2670C781004A5051 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA5D1A2670C781004A5051 /* Extension.swift */; };
 		EFFA5D202670C7D2004A5051 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA5D1F2670C7D2004A5051 /* SignInModel.swift */; };
 		EFFA5D242670C856004A5051 /* MainListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA5D232670C856004A5051 /* MainListModel.swift */; };
 		EFFA5D262670C873004A5051 /* CommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA5D252670C873004A5051 /* CommentResponse.swift */; };
@@ -83,7 +83,7 @@
 		EFFA5D0926703425004A5051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFFA5D0C26703425004A5051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFFA5D0E26703425004A5051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFFA5D1A2670C781004A5051 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		EFFA5D1A2670C781004A5051 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		EFFA5D1F2670C7D2004A5051 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
 		EFFA5D232670C856004A5051 /* MainListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListModel.swift; sourceTree = "<group>"; };
 		EFFA5D252670C873004A5051 /* CommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentResponse.swift; sourceTree = "<group>"; };
@@ -213,7 +213,7 @@
 		EFFA5D162670C733004A5051 /* Extenstion */ = {
 			isa = PBXGroup;
 			children = (
-				EFFA5D1A2670C781004A5051 /* ViewControllerExtension.swift */,
+				EFFA5D1A2670C781004A5051 /* Extension.swift */,
 			);
 			path = Extenstion;
 			sourceTree = "<group>";
@@ -452,7 +452,7 @@
 				EFFA5D362670CBC3004A5051 /* WritingViewController.swift in Sources */,
 				EF99A12B2670D68100CF8CE2 /* CommentListAPI.swift in Sources */,
 				EFFA5D242670C856004A5051 /* MainListModel.swift in Sources */,
-				EFFA5D1B2670C781004A5051 /* ViewControllerExtension.swift in Sources */,
+				EFFA5D1B2670C781004A5051 /* Extension.swift in Sources */,
 				EFFA5D262670C873004A5051 /* CommentResponse.swift in Sources */,
 				EF8BABDB2671FBBF006888AE /* ACommentTableViewCell.swift in Sources */,
 				EFFA5D452670CD15004A5051 /* CCell.swift in Sources */,

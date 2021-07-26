@@ -12,6 +12,5 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBar()
-        // Do any additional setup after loading the view.
     }
 }

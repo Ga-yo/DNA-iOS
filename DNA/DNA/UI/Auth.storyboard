@@ -62,7 +62,7 @@
                                     <fragment content="DNA">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="30" name="NanumGothicOTFBold"/>
+                                            <font key="NSFont" metaFont="system" size="30"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -149,7 +149,7 @@
                                     <fragment content="※ 이메일 또는 비밀번호가 잘못되었습니다">
                                         <attributes>
                                             <color key="NSColor" red="0.57647058823529407" green="0.10196078431372549" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="10" name="NanumGothicOTF"/>
+                                            <font key="NSFont" metaFont="system" size="10"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -175,7 +175,7 @@
                                     <fragment content="DNA">
                                         <attributes>
                                             <color key="NSColor" red="0.51764705882352935" green="0.66274509803921566" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="18" name="NanumGothicOTFBold"/>
+                                            <font key="NSFont" metaFont="system" size="18"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -265,7 +265,7 @@
                                     <fragment content="※ 이메일 형식이 올바른지 확인해 주세요">
                                         <attributes>
                                             <color key="NSColor" red="0.57647058823529407" green="0.10196078431372549" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="8" name="NanumGothicOTF"/>
+                                            <font key="NSFont" metaFont="system" size="8"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -324,7 +324,7 @@
                                     <fragment content="DNA">
                                         <attributes>
                                             <color key="NSColor" red="0.51764705882352935" green="0.66274509803921566" blue="0.67450980392156867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="18" name="NanumGothicOTFBold"/>
+                                            <font key="NSFont" metaFont="system" size="18"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>

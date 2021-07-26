@@ -33,7 +33,7 @@
                                             <fragment content="피드백은 언제나 환영입니다.">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="20" name="NanumGothicOTF"/>
+                                                    <font key="NSFont" metaFont="system" size="20"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -47,7 +47,7 @@
                                             <fragment content="로그아웃하시겠습니까?">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <font key="NSFont" size="20" name="NanumGothicOTF"/>
+                                                    <font key="NSFont" metaFont="system" size="20"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -85,7 +85,7 @@
                                         <fragment content="로그아웃 하기!">
                                             <attributes>
                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="20" name="NanumGothicOTF"/>
+                                                <font key="NSFont" metaFont="system" size="20"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -137,7 +137,7 @@
                                             <fragment content="iOS 사용자 여러분 반갑습니다~">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="16" name="NanumGothicOTF"/>
+                                                    <font key="NSFont" metaFont="system" size="16"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -168,7 +168,7 @@
                                     <fragment content="DNA에 오신 걸 환영합니다!">
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="20" name="NanumGothicOTF"/>
+                                            <font key="NSFont" metaFont="system" size="20"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -181,7 +181,7 @@
                                     <fragment content="DNA">
                                         <attributes>
                                             <color key="NSColor" red="0.12549019607843137" green="0.25098039215686274" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="30" name="NanumGothicOTFBold"/>
+                                            <font key="NSFont" metaFont="system" size="30"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -266,7 +266,7 @@
                                     <fragment content="프로젝트, 약속에 나오지 않고 어딘가 박혀있는 친구를 찾습니다.">
                                         <attributes>
                                             <color key="NSColor" red="0.12549019607843137" green="0.25098039215686274" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="10" name="NanumGothicOTF"/>
+                                            <font key="NSFont" metaFont="system" size="10"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -302,7 +302,7 @@
                                     <fragment content="아무말이나 하며 시간을 때울 사람이나 이야기를 구합니다.">
                                         <attributes>
                                             <color key="NSColor" red="0.12549019607843137" green="0.25098039215686274" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="10" name="NanumGothicOTF"/>
+                                            <font key="NSFont" metaFont="system" size="10"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -316,7 +316,7 @@
                                     <fragment content="노동자 구하기">
                                         <attributes>
                                             <color key="NSColor" red="0.12549019607843137" green="0.25098039215686274" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="12" name="NanumGothicOTFBold"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -330,7 +330,7 @@
                                     <fragment content="대리구매자 구하기">
                                         <attributes>
                                             <color key="NSColor" red="0.12549019607843137" green="0.25098039215686274" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="12" name="NanumGothicOTFBold"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -344,7 +344,7 @@
                                     <fragment content="잠수탄 친구 찾기">
                                         <attributes>
                                             <color key="NSColor" red="0.12549019607843137" green="0.25098039215686274" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="12" name="NanumGothicOTFBold"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -358,7 +358,7 @@
                                     <fragment content="일반 대화 하기">
                                         <attributes>
                                             <color key="NSColor" red="0.12549019607843137" green="0.25098039215686274" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="12" name="NanumGothicOTFBold"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -372,7 +372,7 @@
                                     <fragment content="카테고리">
                                         <attributes>
                                             <color key="NSColor" red="0.12549019607843137" green="0.25098039215686274" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="22" name="NanumGothicOTFBold"/>
+                                            <font key="NSFont" metaFont="system" size="22"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -431,7 +431,7 @@
                                     <fragment content="자신과 함께 혹은 대신, 일을 도맡아 할 사람을 구해보아요!">
                                         <attributes>
                                             <color key="NSColor" red="0.12549019607843137" green="0.25098039215686274" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="10" name="NanumGothicOTF"/>
+                                            <font key="NSFont" metaFont="system" size="10"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -445,7 +445,7 @@
                                     <fragment content="나를 대신해, 물건을 배송해줄 사람을 구합니다.">
                                         <attributes>
                                             <color key="NSColor" red="0.12549019607843137" green="0.25098039215686274" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="10" name="NanumGothicOTF"/>
+                                            <font key="NSFont" metaFont="system" size="10"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -502,7 +502,7 @@
                                             <fragment content="노동자 구하기">
                                                 <attributes>
                                                     <color key="NSColor" red="0.60784313725490191" green="0.70196078431372544" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="13" name="NanumGothicOTF"/>
+                                                    <font key="NSFont" metaFont="system"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -540,7 +540,7 @@
                                                                 <fragment content="김해교">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.12549019607843137" green="0.25098039215686274" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <font key="NSFont" size="20" name="NanumGothicOTFBold"/>
+                                                                        <font key="NSFont" metaFont="system" size="20"/>
                                                                     </attributes>
                                                                 </fragment>
                                                             </attributedString>
@@ -552,7 +552,7 @@
                                                             <attributedString key="attributedText">
                                                                 <fragment content="100자 쓰기 도전">
                                                                     <attributes>
-                                                                        <font key="NSFont" size="18" name="NanumGothicOTFBold"/>
+                                                                        <font key="NSFont" metaFont="system" size="18"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -566,7 +566,7 @@
                                                                 <fragment content="2021년2월">
                                                                     <attributes>
                                                                         <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                        <font key="NSFont" size="12" name="NanumGothicOTF"/>
+                                                                        <font key="NSFont" metaFont="cellTitle"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -579,7 +579,7 @@
                                                             <attributedString key="attributedText">
                                                                 <fragment content="08">
                                                                     <attributes>
-                                                                        <font key="NSFont" size="18" name="NanumGothicOTFBold"/>
+                                                                        <font key="NSFont" metaFont="system" size="18"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -594,7 +594,7 @@
                                                                 <fragment content="안녕지금부터100자써보기를시작할게최대가100자라시작한건데벌써부터때려치고싶다과연나는100자쓰기를할수있을지지금몇시지금6시다되어간다졸린다배고프다졸린데아직다안끝나서나는왜크기를잘못알아서으휴">
                                                                     <attributes>
                                                                         <color key="NSColor" systemColor="labelColor"/>
-                                                                        <font key="NSFont" size="12" name="NanumGothicOTF"/>
+                                                                        <font key="NSFont" metaFont="cellTitle"/>
                                                                     </attributes>
                                                                 </fragment>
                                                             </attributedString>
@@ -609,7 +609,7 @@
                                                                     <fragment content="삭제하기">
                                                                         <attributes>
                                                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                            <font key="NSFont" size="7" name="NanumGothicOTF"/>
+                                                                            <font key="NSFont" metaFont="system" size="7"/>
                                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         </attributes>
                                                                     </fragment>
@@ -716,7 +716,7 @@
                                     <fragment content="노동자 구하기">
                                         <attributes>
                                             <color key="NSColor" red="0.60784313725490191" green="0.70196078431372544" blue="0.72941176470588232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="13" name="NanumGothicOTF"/>
+                                            <font key="NSFont" metaFont="system"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -742,7 +742,7 @@
                                             <fragment content="김해교">
                                                 <attributes>
                                                     <color key="NSColor" red="0.12549019607843137" green="0.25098039215686274" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="20" name="NanumGothicOTFBold"/>
+                                                    <font key="NSFont" metaFont="system" size="20"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -755,7 +755,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="100자 쓰기 도전">
                                                 <attributes>
-                                                    <font key="NSFont" size="18" name="NanumGothicOTFBold"/>
+                                                    <font key="NSFont" metaFont="system" size="18"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -768,7 +768,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="2021년2월">
                                                 <attributes>
-                                                    <font key="NSFont" size="12" name="NanumGothicOTF"/>
+                                                    <font key="NSFont" metaFont="cellTitle"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -781,7 +781,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="08">
                                                 <attributes>
-                                                    <font key="NSFont" size="18" name="NanumGothicOTFBold"/>
+                                                    <font key="NSFont" metaFont="system" size="18"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -796,7 +796,7 @@
                                             <fragment content="안녕지금부터100자써보기를시작할게최대가100자라시작한건데벌써부터때려치고싶다과연나는100자쓰기를할수있을지지금몇시지금6시다되어간다졸린다배고프다졸린데아직다안끝나서나는왜크기를잘못알아서으휴">
                                                 <attributes>
                                                     <color key="NSColor" systemColor="labelColor"/>
-                                                    <font key="NSFont" size="12" name="NanumGothicOTF"/>
+                                                    <font key="NSFont" metaFont="cellTitle"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
@@ -811,7 +811,7 @@
                                                 <fragment content="삭제하기">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="7" name="NanumGothicOTF"/>
+                                                        <font key="NSFont" metaFont="system" size="7"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -848,7 +848,7 @@
                                                                 <fragment content="안녕지금부터100자써보기를시작할게최대가100자라시작한건데벌써부터때려치고싶다과연나는100자쓰기를할수있을지지금몇시지금6시다되어간다졸린다배고프다졸린데아직다안끝나서나는왜크기를잘못알아서으휴">
                                                                     <attributes>
                                                                         <color key="NSColor" systemColor="labelColor"/>
-                                                                        <font key="NSFont" size="9" name="NanumGothicOTF"/>
+                                                                        <font key="NSFont" metaFont="miniSystem"/>
                                                                     </attributes>
                                                                 </fragment>
                                                             </attributedString>
@@ -862,7 +862,7 @@
                                                                 <fragment content="김해교">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.23137254900000001" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <font key="NSFont" size="12" name="NanumGothicOTFBold"/>
+                                                                        <font key="NSFont" metaFont="cellTitle"/>
                                                                     </attributes>
                                                                 </fragment>
                                                             </attributedString>
@@ -880,7 +880,7 @@
                                                                     <fragment content="삭제하기">
                                                                         <attributes>
                                                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            <font key="NSFont" size="7" name="NanumGothicOTF"/>
+                                                                            <font key="NSFont" metaFont="system" size="7"/>
                                                                         </attributes>
                                                                     </fragment>
                                                                 </attributedString>
@@ -974,7 +974,7 @@
                                     <fragment content="대리구매자 구하기">
                                         <attributes>
                                             <color key="NSColor" red="0.60784313725490191" green="0.70196078431372544" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="13" name="NanumGothicOTF"/>
+                                            <font key="NSFont" metaFont="system"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1005,7 +1005,7 @@
                                             <fragment content="김해교">
                                                 <attributes>
                                                     <color key="NSColor" red="0.12549019607843137" green="0.25098039215686274" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="20" name="NanumGothicOTFBold"/>
+                                                    <font key="NSFont" metaFont="system" size="20"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -1018,7 +1018,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="100자 쓰기 도전">
                                                 <attributes>
-                                                    <font key="NSFont" size="18" name="NanumGothicOTFBold"/>
+                                                    <font key="NSFont" metaFont="system" size="18"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -1031,7 +1031,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="2021년2월">
                                                 <attributes>
-                                                    <font key="NSFont" size="12" name="NanumGothicOTF"/>
+                                                    <font key="NSFont" metaFont="cellTitle"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -1044,7 +1044,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="08">
                                                 <attributes>
-                                                    <font key="NSFont" size="18" name="NanumGothicOTFBold"/>
+                                                    <font key="NSFont" metaFont="system" size="18"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -1059,7 +1059,7 @@
                                             <fragment content="안녕지금부터100자써보기를시작할게최대가100자라시작한건데벌써부터때려치고싶다과연나는100자쓰기를할수있을지지금몇시지금6시다되어간다졸린다배고프다졸린데아직다안끝나서나는왜크기를잘못알아서으휴">
                                                 <attributes>
                                                     <color key="NSColor" systemColor="labelColor"/>
-                                                    <font key="NSFont" size="12" name="NanumGothicOTF"/>
+                                                    <font key="NSFont" metaFont="cellTitle"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
@@ -1074,7 +1074,7 @@
                                                 <fragment content="삭제하기">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="7" name="NanumGothicOTF"/>
+                                                        <font key="NSFont" metaFont="system" size="7"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -1111,7 +1111,7 @@
                                                                 <fragment content="안녕지금부터100자써보기를시작할게최대가100자라시작한건데벌써부터때려치고싶다과연나는100자쓰기를할수있을지지금몇시지금6시다되어간다졸린다배고프다졸린데아직다안끝나서나는왜크기를잘못알아서으휴">
                                                                     <attributes>
                                                                         <color key="NSColor" systemColor="labelColor"/>
-                                                                        <font key="NSFont" size="9" name="NanumGothicOTF"/>
+                                                                        <font key="NSFont" metaFont="miniSystem"/>
                                                                     </attributes>
                                                                 </fragment>
                                                             </attributedString>
@@ -1125,7 +1125,7 @@
                                                                 <fragment content="김해교">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.23137254900000001" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <font key="NSFont" size="12" name="NanumGothicOTFBold"/>
+                                                                        <font key="NSFont" metaFont="cellTitle"/>
                                                                     </attributes>
                                                                 </fragment>
                                                             </attributedString>
@@ -1140,7 +1140,7 @@
                                                                     <fragment content="삭제하기">
                                                                         <attributes>
                                                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            <font key="NSFont" size="7" name="NanumGothicOTF"/>
+                                                                            <font key="NSFont" metaFont="system" size="7"/>
                                                                         </attributes>
                                                                     </fragment>
                                                                 </attributedString>
@@ -1237,7 +1237,7 @@
                                     <fragment content="잠수탄 친구 찾기">
                                         <attributes>
                                             <color key="NSColor" red="0.60784313725490191" green="0.70196078431372544" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="13" name="NanumGothicOTF"/>
+                                            <font key="NSFont" metaFont="system"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1268,7 +1268,7 @@
                                             <fragment content="김해교">
                                                 <attributes>
                                                     <color key="NSColor" red="0.12549019607843137" green="0.25098039215686274" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="20" name="NanumGothicOTFBold"/>
+                                                    <font key="NSFont" metaFont="system" size="20"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -1281,7 +1281,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="100자 쓰기 도전">
                                                 <attributes>
-                                                    <font key="NSFont" size="18" name="NanumGothicOTFBold"/>
+                                                    <font key="NSFont" metaFont="system" size="18"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -1294,7 +1294,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="2021년2월">
                                                 <attributes>
-                                                    <font key="NSFont" size="12" name="NanumGothicOTF"/>
+                                                    <font key="NSFont" metaFont="cellTitle"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -1307,7 +1307,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="08">
                                                 <attributes>
-                                                    <font key="NSFont" size="18" name="NanumGothicOTFBold"/>
+                                                    <font key="NSFont" metaFont="system" size="18"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -1322,7 +1322,7 @@
                                             <fragment content="안녕지금부터100자써보기를시작할게최대가100자라시작한건데벌써부터때려치고싶다과연나는100자쓰기를할수있을지지금몇시지금6시다되어간다졸린다배고프다졸린데아직다안끝나서나는왜크기를잘못알아서으휴">
                                                 <attributes>
                                                     <color key="NSColor" systemColor="labelColor"/>
-                                                    <font key="NSFont" size="12" name="NanumGothicOTF"/>
+                                                    <font key="NSFont" metaFont="cellTitle"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
@@ -1337,7 +1337,7 @@
                                                 <fragment content="삭제하기">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="7" name="NanumGothicOTF"/>
+                                                        <font key="NSFont" metaFont="system" size="7"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -1374,7 +1374,7 @@
                                                                 <fragment content="안녕지금부터100자써보기를시작할게최대가100자라시작한건데벌써부터때려치고싶다과연나는100자쓰기를할수있을지지금몇시지금6시다되어간다졸린다배고프다졸린데아직다안끝나서나는왜크기를잘못알아서으휴">
                                                                     <attributes>
                                                                         <color key="NSColor" systemColor="labelColor"/>
-                                                                        <font key="NSFont" size="9" name="NanumGothicOTF"/>
+                                                                        <font key="NSFont" metaFont="miniSystem"/>
                                                                     </attributes>
                                                                 </fragment>
                                                             </attributedString>
@@ -1388,7 +1388,7 @@
                                                                 <fragment content="김해교">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.23137254900000001" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <font key="NSFont" size="12" name="NanumGothicOTFBold"/>
+                                                                        <font key="NSFont" metaFont="cellTitle"/>
                                                                     </attributes>
                                                                 </fragment>
                                                             </attributedString>
@@ -1403,7 +1403,7 @@
                                                                     <fragment content="삭제하기">
                                                                         <attributes>
                                                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            <font key="NSFont" size="7" name="NanumGothicOTF"/>
+                                                                            <font key="NSFont" metaFont="system" size="7"/>
                                                                         </attributes>
                                                                     </fragment>
                                                                 </attributedString>
@@ -1500,7 +1500,7 @@
                                     <fragment content="일반 대화 하기">
                                         <attributes>
                                             <color key="NSColor" red="0.60784313725490191" green="0.70196078431372544" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="13" name="NanumGothicOTF"/>
+                                            <font key="NSFont" metaFont="system"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1531,7 +1531,7 @@
                                             <fragment content="김해교">
                                                 <attributes>
                                                     <color key="NSColor" red="0.12549019607843137" green="0.25098039215686274" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="20" name="NanumGothicOTFBold"/>
+                                                    <font key="NSFont" metaFont="system" size="20"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -1544,7 +1544,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="100자 쓰기 도전">
                                                 <attributes>
-                                                    <font key="NSFont" size="18" name="NanumGothicOTFBold"/>
+                                                    <font key="NSFont" metaFont="system" size="18"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -1557,7 +1557,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="2021년2월">
                                                 <attributes>
-                                                    <font key="NSFont" size="12" name="NanumGothicOTF"/>
+                                                    <font key="NSFont" metaFont="cellTitle"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -1570,7 +1570,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="08">
                                                 <attributes>
-                                                    <font key="NSFont" size="18" name="NanumGothicOTFBold"/>
+                                                    <font key="NSFont" metaFont="system" size="18"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -1585,7 +1585,7 @@
                                             <fragment content="안녕지금부터100자써보기를시작할게최대가100자라시작한건데벌써부터때려치고싶다과연나는100자쓰기를할수있을지지금몇시지금6시다되어간다졸린다배고프다졸린데아직다안끝나서나는왜크기를잘못알아서으휴">
                                                 <attributes>
                                                     <color key="NSColor" systemColor="labelColor"/>
-                                                    <font key="NSFont" size="12" name="NanumGothicOTF"/>
+                                                    <font key="NSFont" metaFont="cellTitle"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
@@ -1600,7 +1600,7 @@
                                                 <fragment content="삭제하기">
                                                     <attributes>
                                                         <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="7" name="NanumGothicOTF"/>
+                                                        <font key="NSFont" metaFont="system" size="7"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -1637,7 +1637,7 @@
                                                                 <fragment content="안녕지금부터100자써보기를시작할게최대가100자라시작한건데벌써부터때려치고싶다과연나는100자쓰기를할수있을지지금몇시지금6시다되어간다졸린다배고프다졸린데아직다안끝나서나는왜크기를잘못알아서으휴">
                                                                     <attributes>
                                                                         <color key="NSColor" systemColor="labelColor"/>
-                                                                        <font key="NSFont" size="9" name="NanumGothicOTF"/>
+                                                                        <font key="NSFont" metaFont="miniSystem"/>
                                                                     </attributes>
                                                                 </fragment>
                                                             </attributedString>
@@ -1651,7 +1651,7 @@
                                                                 <fragment content="김해교">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.23137254900000001" green="0.41176470590000003" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <font key="NSFont" size="12" name="NanumGothicOTFBold"/>
+                                                                        <font key="NSFont" metaFont="cellTitle"/>
                                                                     </attributes>
                                                                 </fragment>
                                                             </attributedString>
@@ -1666,7 +1666,7 @@
                                                                     <fragment content="삭제하기">
                                                                         <attributes>
                                                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            <font key="NSFont" size="7" name="NanumGothicOTF"/>
+                                                                            <font key="NSFont" metaFont="system" size="7"/>
                                                                         </attributes>
                                                                     </fragment>
                                                                 </attributedString>
@@ -1754,7 +1754,7 @@
                                             <fragment content="일반 대화 하기">
                                                 <attributes>
                                                     <color key="NSColor" red="0.60784313725490191" green="0.70196078431372544" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="13" name="NanumGothicOTF"/>
+                                                    <font key="NSFont" metaFont="system"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -1792,7 +1792,7 @@
                                                                 <fragment content="김해교">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.12549019607843137" green="0.25098039215686274" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <font key="NSFont" size="20" name="NanumGothicOTFBold"/>
+                                                                        <font key="NSFont" metaFont="system" size="20"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -1805,7 +1805,7 @@
                                                             <attributedString key="attributedText">
                                                                 <fragment content="100자 쓰기 도전">
                                                                     <attributes>
-                                                                        <font key="NSFont" size="18" name="NanumGothicOTFBold"/>
+                                                                        <font key="NSFont" metaFont="system" size="18"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -1818,7 +1818,7 @@
                                                             <attributedString key="attributedText">
                                                                 <fragment content="2021년2월">
                                                                     <attributes>
-                                                                        <font key="NSFont" size="12" name="NanumGothicOTF"/>
+                                                                        <font key="NSFont" metaFont="cellTitle"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -1831,7 +1831,7 @@
                                                             <attributedString key="attributedText">
                                                                 <fragment content="08">
                                                                     <attributes>
-                                                                        <font key="NSFont" size="18" name="NanumGothicOTFBold"/>
+                                                                        <font key="NSFont" metaFont="system" size="18"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -1846,7 +1846,7 @@
                                                                 <fragment content="안녕지금부터100자써보기를시작할게최대가100자라시작한건데벌써부터때려치고싶다과연나는100자쓰기를할수있을지지금몇시지금6시다되어간다졸린다배고프다졸린데아직다안끝나서나는왜크기를잘못알아서으휴">
                                                                     <attributes>
                                                                         <color key="NSColor" systemColor="labelColor"/>
-                                                                        <font key="NSFont" size="12" name="NanumGothicOTF"/>
+                                                                        <font key="NSFont" metaFont="cellTitle"/>
                                                                     </attributes>
                                                                 </fragment>
                                                             </attributedString>
@@ -1861,7 +1861,7 @@
                                                                     <fragment content="삭제하기">
                                                                         <attributes>
                                                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                            <font key="NSFont" size="7" name="NanumGothicOTF"/>
+                                                                            <font key="NSFont" metaFont="system" size="7"/>
                                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         </attributes>
                                                                     </fragment>
@@ -1957,7 +1957,7 @@
                                             <fragment content="잠수탄 친구 찾기">
                                                 <attributes>
                                                     <color key="NSColor" red="0.60784313725490191" green="0.70196078431372544" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="13" name="NanumGothicOTF"/>
+                                                    <font key="NSFont" metaFont="system"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -1995,7 +1995,7 @@
                                                                 <fragment content="김해교">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.12549019607843137" green="0.25098039215686274" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <font key="NSFont" size="20" name="NanumGothicOTFBold"/>
+                                                                        <font key="NSFont" metaFont="system" size="20"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -2008,7 +2008,7 @@
                                                             <attributedString key="attributedText">
                                                                 <fragment content="100자 쓰기 도전">
                                                                     <attributes>
-                                                                        <font key="NSFont" size="18" name="NanumGothicOTFBold"/>
+                                                                        <font key="NSFont" metaFont="system" size="18"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -2021,7 +2021,7 @@
                                                             <attributedString key="attributedText">
                                                                 <fragment content="2021년2월">
                                                                     <attributes>
-                                                                        <font key="NSFont" size="12" name="NanumGothicOTF"/>
+                                                                        <font key="NSFont" metaFont="cellTitle"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -2034,7 +2034,7 @@
                                                             <attributedString key="attributedText">
                                                                 <fragment content="08">
                                                                     <attributes>
-                                                                        <font key="NSFont" size="18" name="NanumGothicOTFBold"/>
+                                                                        <font key="NSFont" metaFont="system" size="18"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -2049,7 +2049,7 @@
                                                                 <fragment content="안녕지금부터100자써보기를시작할게최대가100자라시작한건데벌써부터때려치고싶다과연나는100자쓰기를할수있을지지금몇시지금6시다되어간다졸린다배고프다졸린데아직다안끝나서나는왜크기를잘못알아서으휴">
                                                                     <attributes>
                                                                         <color key="NSColor" systemColor="labelColor"/>
-                                                                        <font key="NSFont" size="12" name="NanumGothicOTF"/>
+                                                                        <font key="NSFont" metaFont="cellTitle"/>
                                                                     </attributes>
                                                                 </fragment>
                                                             </attributedString>
@@ -2064,7 +2064,7 @@
                                                                     <fragment content="삭제하기">
                                                                         <attributes>
                                                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                            <font key="NSFont" size="7" name="NanumGothicOTF"/>
+                                                                            <font key="NSFont" metaFont="system" size="7"/>
                                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         </attributes>
                                                                     </fragment>
@@ -2160,7 +2160,7 @@
                                             <fragment content="대리구매자 구하기">
                                                 <attributes>
                                                     <color key="NSColor" red="0.60784313725490191" green="0.70196078431372544" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="13" name="NanumGothicOTF"/>
+                                                    <font key="NSFont" metaFont="system"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -2198,7 +2198,7 @@
                                                                 <fragment content="김해교">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.12549019607843137" green="0.25098039215686274" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <font key="NSFont" size="20" name="NanumGothicOTFBold"/>
+                                                                        <font key="NSFont" metaFont="system" size="20"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -2211,7 +2211,7 @@
                                                             <attributedString key="attributedText">
                                                                 <fragment content="100자 쓰기 도전">
                                                                     <attributes>
-                                                                        <font key="NSFont" size="18" name="NanumGothicOTFBold"/>
+                                                                        <font key="NSFont" metaFont="system" size="18"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -2224,7 +2224,7 @@
                                                             <attributedString key="attributedText">
                                                                 <fragment content="2021년2월">
                                                                     <attributes>
-                                                                        <font key="NSFont" size="12" name="NanumGothicOTF"/>
+                                                                        <font key="NSFont" metaFont="cellTitle"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -2237,7 +2237,7 @@
                                                             <attributedString key="attributedText">
                                                                 <fragment content="08">
                                                                     <attributes>
-                                                                        <font key="NSFont" size="18" name="NanumGothicOTFBold"/>
+                                                                        <font key="NSFont" metaFont="system" size="18"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -2252,7 +2252,7 @@
                                                                 <fragment content="안녕지금부터100자써보기를시작할게최대가100자라시작한건데벌써부터때려치고싶다과연나는100자쓰기를할수있을지지금몇시지금6시다되어간다졸린다배고프다졸린데아직다안끝나서나는왜크기를잘못알아서으휴">
                                                                     <attributes>
                                                                         <color key="NSColor" systemColor="labelColor"/>
-                                                                        <font key="NSFont" size="12" name="NanumGothicOTF"/>
+                                                                        <font key="NSFont" metaFont="cellTitle"/>
                                                                     </attributes>
                                                                 </fragment>
                                                             </attributedString>
@@ -2267,7 +2267,7 @@
                                                                     <fragment content="삭제하기">
                                                                         <attributes>
                                                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                            <font key="NSFont" size="7" name="NanumGothicOTF"/>
+                                                                            <font key="NSFont" metaFont="system" size="7"/>
                                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                         </attributes>
                                                                     </fragment>
@@ -2397,7 +2397,7 @@
                                         <fragment content="등록">
                                             <attributes>
                                                 <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="20" name="NanumGothicOTF"/>
+                                                <font key="NSFont" metaFont="system" size="20"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>

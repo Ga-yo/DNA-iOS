@@ -27,6 +27,7 @@ final class TViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.reloadData()
     }
     
+    //tableview delegate, datasource문은 Extension으로 빼서하는게 가독성에 좋은 것 같앙
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return MainListModel.timelineResponses.count
     }
@@ -35,6 +36,12 @@ final class TViewController: UIViewController, UITableViewDelegate, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "TCell") as! TCell
         
         let date = MainListModel.timelineResponses[indexPath.row].createdAt
+        
+        //이건 해도 되고 안해도 되는데
+        //여기 아래에 cell에 바인딩해주는 코드가 지저분하다고 느낀다면
+        //해당 커스텀 셀 클래스 안에서 바인딩 해주는 코드를 작성하면 코드가 좀 깔끔해질 수 있음!
+        //TCell.swift에 예시를 들자면
+        //cell.configCell(MainListModel.timelineResponses[indexPath.row])
         
         cell.nameLabel.text = MainListModel.timelineResponses[indexPath.row].name
         cell.titleLabel.text = MainListModel.timelineResponses[indexPath.row].title
